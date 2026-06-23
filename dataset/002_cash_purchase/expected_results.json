@@ -1,0 +1,73 @@
+{
+  "trialBalance": [
+    {
+      "ledger": "Cash",
+      "group": "Cash-in-Hand",
+      "classification": "asset",
+      "debit": 0.0,
+      "credit": 1200.0,
+      "neutralBalance": -1200.0,
+      "tallySignedClosingBalance": 1200.0
+    },
+    {
+      "ledger": "Purchase",
+      "group": "Purchase Accounts",
+      "classification": "expense",
+      "debit": 1200.0,
+      "credit": 0.0,
+      "neutralBalance": 1200.0,
+      "tallySignedClosingBalance": -1200.0
+    }
+  ],
+  "profitLoss": {
+    "rows": [
+      {
+        "ledger": "Purchase",
+        "classification": "expense",
+        "amount": -1200.0
+      }
+    ],
+    "netProfit": -1200.0
+  },
+  "balanceSheet": {
+    "rows": [
+      {
+        "ledger": "Cash",
+        "classification": "asset",
+        "closingBalance": 1200.0
+      }
+    ],
+    "assetTotal": 1200.0,
+    "liabilityEquityTotalBeforeProfit": 0.0,
+    "netProfit": -1200.0,
+    "checkTotalWithProfit": 0.0
+  },
+  "ledgerBalances": {
+    "Cash": {
+      "ledger": "Cash",
+      "group": "Cash-in-Hand",
+      "classification": "asset",
+      "debit": 0.0,
+      "credit": 1200.0,
+      "neutralBalance": -1200.0,
+      "tallySignedClosingBalance": 1200.0
+    },
+    "Purchase": {
+      "ledger": "Purchase",
+      "group": "Purchase Accounts",
+      "classification": "expense",
+      "debit": 1200.0,
+      "credit": 0.0,
+      "neutralBalance": 1200.0,
+      "tallySignedClosingBalance": -1200.0
+    }
+  },
+  "closingBalances": {
+    "stockItems": []
+  },
+  "controlTotals": {
+    "totalDebits": 1200.0,
+    "totalCredits": 1200.0,
+    "balanced": true
+  }
+}

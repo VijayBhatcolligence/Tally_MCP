@@ -1,0 +1,132 @@
+{
+  "metadata": {
+    "id": "005_credit_sale",
+    "name": "Credit Sale",
+    "level": 1,
+    "purpose": "Sale on credit to customer",
+    "scenario": "Credit Sale"
+  },
+  "company": {
+    "name": "Foundry Tally Test Co",
+    "fiscalYearFrom": "2026-04-01",
+    "booksBeginningFrom": "2026-04-01",
+    "currency": "INR"
+  },
+  "groups": [
+    {
+      "name": "Capital Account",
+      "parent": "Primary",
+      "classification": "equity"
+    },
+    {
+      "name": "Current Assets",
+      "parent": "Primary",
+      "classification": "asset"
+    },
+    {
+      "name": "Current Liabilities",
+      "parent": "Primary",
+      "classification": "liability"
+    },
+    {
+      "name": "Fixed Assets",
+      "parent": "Primary",
+      "classification": "asset"
+    },
+    {
+      "name": "Direct Expenses",
+      "parent": "Primary",
+      "classification": "expense"
+    },
+    {
+      "name": "Indirect Expenses",
+      "parent": "Primary",
+      "classification": "expense"
+    },
+    {
+      "name": "Direct Incomes",
+      "parent": "Primary",
+      "classification": "income"
+    },
+    {
+      "name": "Indirect Incomes",
+      "parent": "Primary",
+      "classification": "income"
+    },
+    {
+      "name": "Sales Accounts",
+      "parent": "Direct Incomes",
+      "classification": "income"
+    },
+    {
+      "name": "Purchase Accounts",
+      "parent": "Direct Expenses",
+      "classification": "expense"
+    },
+    {
+      "name": "Sundry Debtors",
+      "parent": "Current Assets",
+      "classification": "asset"
+    },
+    {
+      "name": "Sundry Creditors",
+      "parent": "Current Liabilities",
+      "classification": "liability"
+    },
+    {
+      "name": "Cash-in-Hand",
+      "parent": "Current Assets",
+      "classification": "asset"
+    },
+    {
+      "name": "Bank Accounts",
+      "parent": "Current Assets",
+      "classification": "asset"
+    },
+    {
+      "name": "Duties & Taxes",
+      "parent": "Current Liabilities",
+      "classification": "liability"
+    },
+    {
+      "name": "Stock-in-Hand",
+      "parent": "Current Assets",
+      "classification": "asset"
+    }
+  ],
+  "ledgers": [
+    {
+      "name": "Sales",
+      "group": "Sales Accounts",
+      "classification": "income",
+      "openingBalance": 0.0
+    },
+    {
+      "name": "Customer A",
+      "group": "Sundry Debtors",
+      "classification": "asset",
+      "openingBalance": 0.0
+    }
+  ],
+  "stockItems": [],
+  "vouchers": [
+    {
+      "id": "V001",
+      "type": "Sales",
+      "date": "2026-04-01",
+      "narration": "Credit sale",
+      "entries": [
+        {
+          "ledger": "Customer A",
+          "dc": "debit",
+          "amount": 3200.0
+        },
+        {
+          "ledger": "Sales",
+          "dc": "credit",
+          "amount": 3200.0
+        }
+      ]
+    }
+  ]
+}

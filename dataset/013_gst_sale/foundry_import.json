@@ -1,0 +1,54 @@
+{
+  "company": {
+    "name": "Foundry Tally Test Co",
+    "fiscalYearFrom": "2026-04-01",
+    "booksBeginningFrom": "2026-04-01",
+    "currency": "INR"
+  },
+  "chartOfAccounts": [
+    {
+      "name": "Sales",
+      "group": "Sales Accounts",
+      "classification": "income",
+      "openingBalance": 0.0
+    },
+    {
+      "name": "Customer A",
+      "group": "Sundry Debtors",
+      "classification": "asset",
+      "openingBalance": 0.0
+    },
+    {
+      "name": "GST Output",
+      "group": "Duties & Taxes",
+      "classification": "liability",
+      "openingBalance": 0.0
+    }
+  ],
+  "stockItems": [],
+  "journalEntries": [
+    {
+      "externalId": "V001",
+      "entryType": "Sales",
+      "postingDate": "2026-04-01",
+      "memo": "GST sale",
+      "lines": [
+        {
+          "ledger": "Customer A",
+          "dc": "debit",
+          "amount": 1180.0
+        },
+        {
+          "ledger": "Sales",
+          "dc": "credit",
+          "amount": 1000.0
+        },
+        {
+          "ledger": "GST Output",
+          "dc": "credit",
+          "amount": 180.0
+        }
+      ]
+    }
+  ]
+}

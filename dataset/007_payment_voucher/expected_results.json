@@ -1,0 +1,96 @@
+{
+  "trialBalance": [
+    {
+      "ledger": "Bank",
+      "group": "Bank Accounts",
+      "classification": "asset",
+      "debit": 0.0,
+      "credit": 1000.0,
+      "neutralBalance": -1000.0,
+      "tallySignedClosingBalance": 1000.0
+    },
+    {
+      "ledger": "Purchase",
+      "group": "Purchase Accounts",
+      "classification": "expense",
+      "debit": 1800.0,
+      "credit": 0.0,
+      "neutralBalance": 1800.0,
+      "tallySignedClosingBalance": -1800.0
+    },
+    {
+      "ledger": "Supplier A",
+      "group": "Sundry Creditors",
+      "classification": "liability",
+      "debit": 0.0,
+      "credit": 800.0,
+      "neutralBalance": -800.0,
+      "tallySignedClosingBalance": 800.0
+    }
+  ],
+  "profitLoss": {
+    "rows": [
+      {
+        "ledger": "Purchase",
+        "classification": "expense",
+        "amount": -1800.0
+      }
+    ],
+    "netProfit": -1800.0
+  },
+  "balanceSheet": {
+    "rows": [
+      {
+        "ledger": "Bank",
+        "classification": "asset",
+        "closingBalance": 1000.0
+      },
+      {
+        "ledger": "Supplier A",
+        "classification": "liability",
+        "closingBalance": 800.0
+      }
+    ],
+    "assetTotal": 1000.0,
+    "liabilityEquityTotalBeforeProfit": 800.0,
+    "netProfit": -1800.0,
+    "checkTotalWithProfit": 0.0
+  },
+  "ledgerBalances": {
+    "Bank": {
+      "ledger": "Bank",
+      "group": "Bank Accounts",
+      "classification": "asset",
+      "debit": 0.0,
+      "credit": 1000.0,
+      "neutralBalance": -1000.0,
+      "tallySignedClosingBalance": 1000.0
+    },
+    "Purchase": {
+      "ledger": "Purchase",
+      "group": "Purchase Accounts",
+      "classification": "expense",
+      "debit": 1800.0,
+      "credit": 0.0,
+      "neutralBalance": 1800.0,
+      "tallySignedClosingBalance": -1800.0
+    },
+    "Supplier A": {
+      "ledger": "Supplier A",
+      "group": "Sundry Creditors",
+      "classification": "liability",
+      "debit": 0.0,
+      "credit": 800.0,
+      "neutralBalance": -800.0,
+      "tallySignedClosingBalance": 800.0
+    }
+  },
+  "closingBalances": {
+    "stockItems": []
+  },
+  "controlTotals": {
+    "totalDebits": 2800.0,
+    "totalCredits": 2800.0,
+    "balanced": true
+  }
+}

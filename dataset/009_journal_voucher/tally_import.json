@@ -1,0 +1,105 @@
+{
+  "company": {
+    "name": "Foundry Tally Test Co",
+    "fiscalYearFrom": "2026-04-01",
+    "booksBeginningFrom": "2026-04-01",
+    "currency": "INR"
+  },
+  "createGroupCalls": [
+    {
+      "name": "Capital Account",
+      "parent": "Primary"
+    },
+    {
+      "name": "Current Assets",
+      "parent": "Primary"
+    },
+    {
+      "name": "Current Liabilities",
+      "parent": "Primary"
+    },
+    {
+      "name": "Fixed Assets",
+      "parent": "Primary"
+    },
+    {
+      "name": "Direct Expenses",
+      "parent": "Primary"
+    },
+    {
+      "name": "Indirect Expenses",
+      "parent": "Primary"
+    },
+    {
+      "name": "Direct Incomes",
+      "parent": "Primary"
+    },
+    {
+      "name": "Indirect Incomes",
+      "parent": "Primary"
+    },
+    {
+      "name": "Sales Accounts",
+      "parent": "Direct Incomes"
+    },
+    {
+      "name": "Purchase Accounts",
+      "parent": "Direct Expenses"
+    },
+    {
+      "name": "Sundry Debtors",
+      "parent": "Current Assets"
+    },
+    {
+      "name": "Sundry Creditors",
+      "parent": "Current Liabilities"
+    },
+    {
+      "name": "Cash-in-Hand",
+      "parent": "Current Assets"
+    },
+    {
+      "name": "Bank Accounts",
+      "parent": "Current Assets"
+    },
+    {
+      "name": "Duties & Taxes",
+      "parent": "Current Liabilities"
+    },
+    {
+      "name": "Stock-in-Hand",
+      "parent": "Current Assets"
+    }
+  ],
+  "createLedgerCalls": [
+    {
+      "name": "Rent Expense",
+      "parent": "Indirect Expenses",
+      "openingBalance": 0.0
+    },
+    {
+      "name": "Accrued Expenses",
+      "parent": "Current Liabilities",
+      "openingBalance": 0.0
+    }
+  ],
+  "createStockItemCalls": [],
+  "createVoucherCalls": [
+    {
+      "tool": "create-journal-voucher",
+      "voucherNumber": "V001",
+      "date": "2026-04-01",
+      "narration": "Rent accrued",
+      "entries": [
+        {
+          "ledgerName": "Rent Expense",
+          "amount": -900.0
+        },
+        {
+          "ledgerName": "Accrued Expenses",
+          "amount": 900.0
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,126 @@
+{
+  "company": {
+    "name": "Foundry Tally Test Co",
+    "fiscalYearFrom": "2026-04-01",
+    "booksBeginningFrom": "2026-04-01",
+    "currency": "INR"
+  },
+  "createGroupCalls": [
+    {
+      "name": "Capital Account",
+      "parent": "Primary"
+    },
+    {
+      "name": "Current Assets",
+      "parent": "Primary"
+    },
+    {
+      "name": "Current Liabilities",
+      "parent": "Primary"
+    },
+    {
+      "name": "Fixed Assets",
+      "parent": "Primary"
+    },
+    {
+      "name": "Direct Expenses",
+      "parent": "Primary"
+    },
+    {
+      "name": "Indirect Expenses",
+      "parent": "Primary"
+    },
+    {
+      "name": "Direct Incomes",
+      "parent": "Primary"
+    },
+    {
+      "name": "Indirect Incomes",
+      "parent": "Primary"
+    },
+    {
+      "name": "Sales Accounts",
+      "parent": "Direct Incomes"
+    },
+    {
+      "name": "Purchase Accounts",
+      "parent": "Direct Expenses"
+    },
+    {
+      "name": "Sundry Debtors",
+      "parent": "Current Assets"
+    },
+    {
+      "name": "Sundry Creditors",
+      "parent": "Current Liabilities"
+    },
+    {
+      "name": "Cash-in-Hand",
+      "parent": "Current Assets"
+    },
+    {
+      "name": "Bank Accounts",
+      "parent": "Current Assets"
+    },
+    {
+      "name": "Duties & Taxes",
+      "parent": "Current Liabilities"
+    },
+    {
+      "name": "Stock-in-Hand",
+      "parent": "Current Assets"
+    }
+  ],
+  "createLedgerCalls": [
+    {
+      "name": "Bank",
+      "parent": "Bank Accounts",
+      "openingBalance": 0.0
+    },
+    {
+      "name": "Purchase",
+      "parent": "Purchase Accounts",
+      "openingBalance": 0.0
+    },
+    {
+      "name": "Supplier A",
+      "parent": "Sundry Creditors",
+      "openingBalance": 0.0
+    }
+  ],
+  "createStockItemCalls": [],
+  "createVoucherCalls": [
+    {
+      "tool": "create-purchase-voucher",
+      "voucherNumber": "V001",
+      "date": "2026-04-01",
+      "narration": "Opening credit purchase",
+      "entries": [
+        {
+          "ledgerName": "Purchase",
+          "amount": -1800.0
+        },
+        {
+          "ledgerName": "Supplier A",
+          "amount": 1800.0
+        }
+      ]
+    },
+    {
+      "tool": "create-payment-voucher",
+      "voucherNumber": "V002",
+      "date": "2026-04-02",
+      "narration": "Supplier payment",
+      "entries": [
+        {
+          "ledgerName": "Supplier A",
+          "amount": -1000.0
+        },
+        {
+          "ledgerName": "Bank",
+          "amount": 1000.0
+        }
+      ]
+    }
+  ]
+}

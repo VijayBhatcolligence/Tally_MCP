@@ -1,0 +1,158 @@
+{
+  "company": {
+    "name": "Foundry Tally Test Co",
+    "fiscalYearFrom": "2026-04-01",
+    "booksBeginningFrom": "2026-04-01",
+    "currency": "INR"
+  },
+  "createGroupCalls": [
+    {
+      "name": "Capital Account",
+      "parent": "Primary"
+    },
+    {
+      "name": "Current Assets",
+      "parent": "Primary"
+    },
+    {
+      "name": "Current Liabilities",
+      "parent": "Primary"
+    },
+    {
+      "name": "Fixed Assets",
+      "parent": "Primary"
+    },
+    {
+      "name": "Direct Expenses",
+      "parent": "Primary"
+    },
+    {
+      "name": "Indirect Expenses",
+      "parent": "Primary"
+    },
+    {
+      "name": "Direct Incomes",
+      "parent": "Primary"
+    },
+    {
+      "name": "Indirect Incomes",
+      "parent": "Primary"
+    },
+    {
+      "name": "Sales Accounts",
+      "parent": "Direct Incomes"
+    },
+    {
+      "name": "Purchase Accounts",
+      "parent": "Direct Expenses"
+    },
+    {
+      "name": "Sundry Debtors",
+      "parent": "Current Assets"
+    },
+    {
+      "name": "Sundry Creditors",
+      "parent": "Current Liabilities"
+    },
+    {
+      "name": "Cash-in-Hand",
+      "parent": "Current Assets"
+    },
+    {
+      "name": "Bank Accounts",
+      "parent": "Current Assets"
+    },
+    {
+      "name": "Duties & Taxes",
+      "parent": "Current Liabilities"
+    },
+    {
+      "name": "Stock-in-Hand",
+      "parent": "Current Assets"
+    }
+  ],
+  "createLedgerCalls": [
+    {
+      "name": "Sales",
+      "parent": "Sales Accounts",
+      "openingBalance": 0.0
+    },
+    {
+      "name": "Customer A",
+      "parent": "Sundry Debtors",
+      "openingBalance": 0.0
+    },
+    {
+      "name": "Supplier A",
+      "parent": "Sundry Creditors",
+      "openingBalance": 0.0
+    },
+    {
+      "name": "Inventory",
+      "parent": "Stock-in-Hand",
+      "openingBalance": 0.0
+    },
+    {
+      "name": "COGS",
+      "parent": "Direct Expenses",
+      "openingBalance": 0.0
+    }
+  ],
+  "createStockItemCalls": [
+    {
+      "name": "Widget A",
+      "stockGroup": "Finished Goods",
+      "baseUnit": "Nos"
+    }
+  ],
+  "createVoucherCalls": [
+    {
+      "tool": "create-purchase-voucher",
+      "voucherNumber": "V001",
+      "date": "2026-04-01",
+      "narration": "Inventory purchase",
+      "entries": [
+        {
+          "ledgerName": "Inventory",
+          "amount": -1000.0
+        },
+        {
+          "ledgerName": "Supplier A",
+          "amount": 1000.0
+        }
+      ]
+    },
+    {
+      "tool": "create-sales-voucher",
+      "voucherNumber": "V002",
+      "date": "2026-04-02",
+      "narration": "Inventory sale",
+      "entries": [
+        {
+          "ledgerName": "Customer A",
+          "amount": -900.0
+        },
+        {
+          "ledgerName": "Sales",
+          "amount": 900.0
+        }
+      ]
+    },
+    {
+      "tool": "create-journal-voucher",
+      "voucherNumber": "V003",
+      "date": "2026-04-02",
+      "narration": "COGS recognition",
+      "entries": [
+        {
+          "ledgerName": "COGS",
+          "amount": -400.0
+        },
+        {
+          "ledgerName": "Inventory",
+          "amount": 400.0
+        }
+      ]
+    }
+  ]
+}

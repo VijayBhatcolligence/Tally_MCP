@@ -1,0 +1,103 @@
+{
+  "company": {
+    "name": "Foundry Tally Test Co",
+    "fiscalYearFrom": "2026-04-01",
+    "booksBeginningFrom": "2026-04-01",
+    "currency": "INR"
+  },
+  "chartOfAccounts": [
+    {
+      "name": "Sales",
+      "group": "Sales Accounts",
+      "classification": "income",
+      "openingBalance": 0.0
+    },
+    {
+      "name": "Customer A",
+      "group": "Sundry Debtors",
+      "classification": "asset",
+      "openingBalance": 0.0
+    },
+    {
+      "name": "Supplier A",
+      "group": "Sundry Creditors",
+      "classification": "liability",
+      "openingBalance": 0.0
+    },
+    {
+      "name": "Inventory",
+      "group": "Stock-in-Hand",
+      "classification": "asset",
+      "openingBalance": 0.0
+    },
+    {
+      "name": "COGS",
+      "group": "Direct Expenses",
+      "classification": "expense",
+      "openingBalance": 0.0
+    }
+  ],
+  "stockItems": [
+    {
+      "name": "Widget A",
+      "stockGroup": "Finished Goods",
+      "baseUnit": "Nos"
+    }
+  ],
+  "journalEntries": [
+    {
+      "externalId": "V001",
+      "entryType": "Purchase",
+      "postingDate": "2026-04-01",
+      "memo": "Inventory purchase",
+      "lines": [
+        {
+          "ledger": "Inventory",
+          "dc": "debit",
+          "amount": 1000.0
+        },
+        {
+          "ledger": "Supplier A",
+          "dc": "credit",
+          "amount": 1000.0
+        }
+      ]
+    },
+    {
+      "externalId": "V002",
+      "entryType": "Sales",
+      "postingDate": "2026-04-02",
+      "memo": "Inventory sale",
+      "lines": [
+        {
+          "ledger": "Customer A",
+          "dc": "debit",
+          "amount": 900.0
+        },
+        {
+          "ledger": "Sales",
+          "dc": "credit",
+          "amount": 900.0
+        }
+      ]
+    },
+    {
+      "externalId": "V003",
+      "entryType": "Journal",
+      "postingDate": "2026-04-02",
+      "memo": "COGS recognition",
+      "lines": [
+        {
+          "ledger": "COGS",
+          "dc": "debit",
+          "amount": 400.0
+        },
+        {
+          "ledger": "Inventory",
+          "dc": "credit",
+          "amount": 400.0
+        }
+      ]
+    }
+  ]
+}

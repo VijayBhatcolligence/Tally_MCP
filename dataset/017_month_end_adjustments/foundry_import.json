@@ -1,0 +1,91 @@
+{
+  "company": {
+    "name": "Foundry Tally Test Co",
+    "fiscalYearFrom": "2026-04-01",
+    "booksBeginningFrom": "2026-04-01",
+    "currency": "INR"
+  },
+  "chartOfAccounts": [
+    {
+      "name": "Rent Expense",
+      "group": "Indirect Expenses",
+      "classification": "expense",
+      "openingBalance": 0.0
+    },
+    {
+      "name": "Salary Expense",
+      "group": "Indirect Expenses",
+      "classification": "expense",
+      "openingBalance": 0.0
+    },
+    {
+      "name": "Depreciation Expense",
+      "group": "Indirect Expenses",
+      "classification": "expense",
+      "openingBalance": 0.0
+    },
+    {
+      "name": "Accrued Expenses",
+      "group": "Current Liabilities",
+      "classification": "liability",
+      "openingBalance": 0.0
+    }
+  ],
+  "stockItems": [],
+  "journalEntries": [
+    {
+      "externalId": "V001",
+      "entryType": "Journal",
+      "postingDate": "2026-04-30",
+      "memo": "Rent accrual",
+      "lines": [
+        {
+          "ledger": "Rent Expense",
+          "dc": "debit",
+          "amount": 1000.0
+        },
+        {
+          "ledger": "Accrued Expenses",
+          "dc": "credit",
+          "amount": 1000.0
+        }
+      ]
+    },
+    {
+      "externalId": "V002",
+      "entryType": "Journal",
+      "postingDate": "2026-04-30",
+      "memo": "Salary accrual",
+      "lines": [
+        {
+          "ledger": "Salary Expense",
+          "dc": "debit",
+          "amount": 1500.0
+        },
+        {
+          "ledger": "Accrued Expenses",
+          "dc": "credit",
+          "amount": 1500.0
+        }
+      ]
+    },
+    {
+      "externalId": "V003",
+      "entryType": "Journal",
+      "postingDate": "2026-04-30",
+      "memo": "Depreciation",
+      "lines": [
+        {
+          "ledger": "Depreciation Expense",
+          "dc": "debit",
+          "amount": 300.0
+        },
+        {
+          "ledger": "Accrued Expenses",
+          "dc": "credit",
+          "amount": 300.0
+        }
+      ]
+    }
+  ]
+}

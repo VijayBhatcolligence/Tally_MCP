@@ -1,0 +1,67 @@
+{
+  "company": {
+    "name": "Foundry Tally Test Co",
+    "fiscalYearFrom": "2026-04-01",
+    "booksBeginningFrom": "2026-04-01",
+    "currency": "INR"
+  },
+  "chartOfAccounts": [
+    {
+      "name": "Purchase",
+      "group": "Purchase Accounts",
+      "classification": "expense",
+      "openingBalance": 0.0
+    },
+    {
+      "name": "Purchase Return",
+      "group": "Purchase Accounts",
+      "classification": "contra_expense",
+      "openingBalance": 0.0
+    },
+    {
+      "name": "Supplier A",
+      "group": "Sundry Creditors",
+      "classification": "liability",
+      "openingBalance": 0.0
+    }
+  ],
+  "stockItems": [],
+  "journalEntries": [
+    {
+      "externalId": "V001",
+      "entryType": "Purchase",
+      "postingDate": "2026-04-01",
+      "memo": "Credit purchase",
+      "lines": [
+        {
+          "ledger": "Purchase",
+          "dc": "debit",
+          "amount": 2000.0
+        },
+        {
+          "ledger": "Supplier A",
+          "dc": "credit",
+          "amount": 2000.0
+        }
+      ]
+    },
+    {
+      "externalId": "V002",
+      "entryType": "Debit Note",
+      "postingDate": "2026-04-02",
+      "memo": "Purchase return",
+      "lines": [
+        {
+          "ledger": "Supplier A",
+          "dc": "debit",
+          "amount": 500.0
+        },
+        {
+          "ledger": "Purchase Return",
+          "dc": "credit",
+          "amount": 500.0
+        }
+      ]
+    }
+  ]
+}

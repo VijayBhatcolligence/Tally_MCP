@@ -1,0 +1,188 @@
+{
+  "trialBalance": [
+    {
+      "ledger": "Bank",
+      "group": "Bank Accounts",
+      "classification": "asset",
+      "debit": 6740.0,
+      "credit": 0.0,
+      "neutralBalance": 6740.0,
+      "tallySignedClosingBalance": -6740.0
+    },
+    {
+      "ledger": "Cash",
+      "group": "Cash-in-Hand",
+      "classification": "asset",
+      "debit": 6610.0,
+      "credit": 0.0,
+      "neutralBalance": 6610.0,
+      "tallySignedClosingBalance": -6610.0
+    },
+    {
+      "ledger": "Customer A",
+      "group": "Sundry Debtors",
+      "classification": "asset",
+      "debit": 250.0,
+      "credit": 0.0,
+      "neutralBalance": 250.0,
+      "tallySignedClosingBalance": -250.0
+    },
+    {
+      "ledger": "Purchase",
+      "group": "Purchase Accounts",
+      "classification": "expense",
+      "debit": 6490.0,
+      "credit": 0.0,
+      "neutralBalance": 6490.0,
+      "tallySignedClosingBalance": -6490.0
+    },
+    {
+      "ledger": "Rent Expense",
+      "group": "Indirect Expenses",
+      "classification": "expense",
+      "debit": 0.0,
+      "credit": 0.0,
+      "neutralBalance": 0.0,
+      "tallySignedClosingBalance": 0.0
+    },
+    {
+      "ledger": "Sales",
+      "group": "Sales Accounts",
+      "classification": "income",
+      "debit": 0.0,
+      "credit": 13600.0,
+      "neutralBalance": -13600.0,
+      "tallySignedClosingBalance": 13600.0
+    },
+    {
+      "ledger": "Supplier A",
+      "group": "Sundry Creditors",
+      "classification": "liability",
+      "debit": 0.0,
+      "credit": 6490.0,
+      "neutralBalance": -6490.0,
+      "tallySignedClosingBalance": 6490.0
+    }
+  ],
+  "profitLoss": {
+    "rows": [
+      {
+        "ledger": "Purchase",
+        "classification": "expense",
+        "amount": -6490.0
+      },
+      {
+        "ledger": "Rent Expense",
+        "classification": "expense",
+        "amount": 0.0
+      },
+      {
+        "ledger": "Sales",
+        "classification": "income",
+        "amount": 13600.0
+      }
+    ],
+    "netProfit": 7110.0
+  },
+  "balanceSheet": {
+    "rows": [
+      {
+        "ledger": "Bank",
+        "classification": "asset",
+        "closingBalance": -6740.0
+      },
+      {
+        "ledger": "Cash",
+        "classification": "asset",
+        "closingBalance": -6610.0
+      },
+      {
+        "ledger": "Customer A",
+        "classification": "asset",
+        "closingBalance": -250.0
+      },
+      {
+        "ledger": "Supplier A",
+        "classification": "liability",
+        "closingBalance": 6490.0
+      }
+    ],
+    "assetTotal": -13600.0,
+    "liabilityEquityTotalBeforeProfit": 6490.0,
+    "netProfit": 7110.0,
+    "checkTotalWithProfit": 0.0
+  },
+  "ledgerBalances": {
+    "Bank": {
+      "ledger": "Bank",
+      "group": "Bank Accounts",
+      "classification": "asset",
+      "debit": 6740.0,
+      "credit": 0.0,
+      "neutralBalance": 6740.0,
+      "tallySignedClosingBalance": -6740.0
+    },
+    "Cash": {
+      "ledger": "Cash",
+      "group": "Cash-in-Hand",
+      "classification": "asset",
+      "debit": 6610.0,
+      "credit": 0.0,
+      "neutralBalance": 6610.0,
+      "tallySignedClosingBalance": -6610.0
+    },
+    "Customer A": {
+      "ledger": "Customer A",
+      "group": "Sundry Debtors",
+      "classification": "asset",
+      "debit": 250.0,
+      "credit": 0.0,
+      "neutralBalance": 250.0,
+      "tallySignedClosingBalance": -250.0
+    },
+    "Purchase": {
+      "ledger": "Purchase",
+      "group": "Purchase Accounts",
+      "classification": "expense",
+      "debit": 6490.0,
+      "credit": 0.0,
+      "neutralBalance": 6490.0,
+      "tallySignedClosingBalance": -6490.0
+    },
+    "Rent Expense": {
+      "ledger": "Rent Expense",
+      "group": "Indirect Expenses",
+      "classification": "expense",
+      "debit": 0.0,
+      "credit": 0.0,
+      "neutralBalance": 0.0,
+      "tallySignedClosingBalance": 0.0
+    },
+    "Sales": {
+      "ledger": "Sales",
+      "group": "Sales Accounts",
+      "classification": "income",
+      "debit": 0.0,
+      "credit": 13600.0,
+      "neutralBalance": -13600.0,
+      "tallySignedClosingBalance": 13600.0
+    },
+    "Supplier A": {
+      "ledger": "Supplier A",
+      "group": "Sundry Creditors",
+      "classification": "liability",
+      "debit": 0.0,
+      "credit": 6490.0,
+      "neutralBalance": -6490.0,
+      "tallySignedClosingBalance": 6490.0
+    }
+  },
+  "closingBalances": {
+    "stockItems": []
+  },
+  "controlTotals": {
+    "totalDebits": 26830.0,
+    "totalCredits": 26830.0,
+    "balanced": true
+  }
+}

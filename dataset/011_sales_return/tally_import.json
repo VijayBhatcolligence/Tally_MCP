@@ -1,0 +1,126 @@
+{
+  "company": {
+    "name": "Foundry Tally Test Co",
+    "fiscalYearFrom": "2026-04-01",
+    "booksBeginningFrom": "2026-04-01",
+    "currency": "INR"
+  },
+  "createGroupCalls": [
+    {
+      "name": "Capital Account",
+      "parent": "Primary"
+    },
+    {
+      "name": "Current Assets",
+      "parent": "Primary"
+    },
+    {
+      "name": "Current Liabilities",
+      "parent": "Primary"
+    },
+    {
+      "name": "Fixed Assets",
+      "parent": "Primary"
+    },
+    {
+      "name": "Direct Expenses",
+      "parent": "Primary"
+    },
+    {
+      "name": "Indirect Expenses",
+      "parent": "Primary"
+    },
+    {
+      "name": "Direct Incomes",
+      "parent": "Primary"
+    },
+    {
+      "name": "Indirect Incomes",
+      "parent": "Primary"
+    },
+    {
+      "name": "Sales Accounts",
+      "parent": "Direct Incomes"
+    },
+    {
+      "name": "Purchase Accounts",
+      "parent": "Direct Expenses"
+    },
+    {
+      "name": "Sundry Debtors",
+      "parent": "Current Assets"
+    },
+    {
+      "name": "Sundry Creditors",
+      "parent": "Current Liabilities"
+    },
+    {
+      "name": "Cash-in-Hand",
+      "parent": "Current Assets"
+    },
+    {
+      "name": "Bank Accounts",
+      "parent": "Current Assets"
+    },
+    {
+      "name": "Duties & Taxes",
+      "parent": "Current Liabilities"
+    },
+    {
+      "name": "Stock-in-Hand",
+      "parent": "Current Assets"
+    }
+  ],
+  "createLedgerCalls": [
+    {
+      "name": "Sales",
+      "parent": "Sales Accounts",
+      "openingBalance": 0.0
+    },
+    {
+      "name": "Sales Return",
+      "parent": "Sales Accounts",
+      "openingBalance": 0.0
+    },
+    {
+      "name": "Customer A",
+      "parent": "Sundry Debtors",
+      "openingBalance": 0.0
+    }
+  ],
+  "createStockItemCalls": [],
+  "createVoucherCalls": [
+    {
+      "tool": "create-sales-voucher",
+      "voucherNumber": "V001",
+      "date": "2026-04-01",
+      "narration": "Credit sale",
+      "entries": [
+        {
+          "ledgerName": "Customer A",
+          "amount": -2600.0
+        },
+        {
+          "ledgerName": "Sales",
+          "amount": 2600.0
+        }
+      ]
+    },
+    {
+      "tool": "create-credit-note",
+      "voucherNumber": "V002",
+      "date": "2026-04-02",
+      "narration": "Sales return",
+      "entries": [
+        {
+          "ledgerName": "Sales Return",
+          "amount": -600.0
+        },
+        {
+          "ledgerName": "Customer A",
+          "amount": 600.0
+        }
+      ]
+    }
+  ]
+}

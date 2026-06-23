@@ -1,0 +1,1855 @@
+{
+  "company": {
+    "name": "Foundry Tally Test Co",
+    "fiscalYearFrom": "2026-04-01",
+    "booksBeginningFrom": "2026-04-01",
+    "currency": "INR"
+  },
+  "chartOfAccounts": [
+    {
+      "name": "Cash",
+      "group": "Cash-in-Hand",
+      "classification": "asset",
+      "openingBalance": 0.0
+    },
+    {
+      "name": "Bank",
+      "group": "Bank Accounts",
+      "classification": "asset",
+      "openingBalance": 0.0
+    },
+    {
+      "name": "Sales",
+      "group": "Sales Accounts",
+      "classification": "income",
+      "openingBalance": 0.0
+    },
+    {
+      "name": "Purchase",
+      "group": "Purchase Accounts",
+      "classification": "expense",
+      "openingBalance": 0.0
+    },
+    {
+      "name": "Customer A",
+      "group": "Sundry Debtors",
+      "classification": "asset",
+      "openingBalance": 0.0
+    },
+    {
+      "name": "Supplier A",
+      "group": "Sundry Creditors",
+      "classification": "liability",
+      "openingBalance": 0.0
+    },
+    {
+      "name": "Rent Expense",
+      "group": "Indirect Expenses",
+      "classification": "expense",
+      "openingBalance": 0.0
+    }
+  ],
+  "stockItems": [],
+  "journalEntries": [
+    {
+      "externalId": "ST00001",
+      "entryType": "Sales",
+      "postingDate": "2026-04-01",
+      "memo": "Deterministic cash sale",
+      "lines": [
+        {
+          "ledger": "Cash",
+          "dc": "debit",
+          "amount": 110.0
+        },
+        {
+          "ledger": "Sales",
+          "dc": "credit",
+          "amount": 110.0
+        }
+      ]
+    },
+    {
+      "externalId": "ST00002",
+      "entryType": "Purchase",
+      "postingDate": "2026-04-02",
+      "memo": "Deterministic credit purchase",
+      "lines": [
+        {
+          "ledger": "Purchase",
+          "dc": "debit",
+          "amount": 120.0
+        },
+        {
+          "ledger": "Supplier A",
+          "dc": "credit",
+          "amount": 120.0
+        }
+      ]
+    },
+    {
+      "externalId": "ST00003",
+      "entryType": "Receipt",
+      "postingDate": "2026-04-03",
+      "memo": "Deterministic customer receipt",
+      "lines": [
+        {
+          "ledger": "Bank",
+          "dc": "debit",
+          "amount": 130.0
+        },
+        {
+          "ledger": "Customer A",
+          "dc": "credit",
+          "amount": 130.0
+        }
+      ]
+    },
+    {
+      "externalId": "ST00004",
+      "entryType": "Journal",
+      "postingDate": "2026-04-04",
+      "memo": "Deterministic receivable setup",
+      "lines": [
+        {
+          "ledger": "Customer A",
+          "dc": "debit",
+          "amount": 140.0
+        },
+        {
+          "ledger": "Sales",
+          "dc": "credit",
+          "amount": 140.0
+        }
+      ]
+    },
+    {
+      "externalId": "ST00005",
+      "entryType": "Sales",
+      "postingDate": "2026-04-05",
+      "memo": "Deterministic cash sale",
+      "lines": [
+        {
+          "ledger": "Cash",
+          "dc": "debit",
+          "amount": 150.0
+        },
+        {
+          "ledger": "Sales",
+          "dc": "credit",
+          "amount": 150.0
+        }
+      ]
+    },
+    {
+      "externalId": "ST00006",
+      "entryType": "Purchase",
+      "postingDate": "2026-04-06",
+      "memo": "Deterministic credit purchase",
+      "lines": [
+        {
+          "ledger": "Purchase",
+          "dc": "debit",
+          "amount": 160.0
+        },
+        {
+          "ledger": "Supplier A",
+          "dc": "credit",
+          "amount": 160.0
+        }
+      ]
+    },
+    {
+      "externalId": "ST00007",
+      "entryType": "Receipt",
+      "postingDate": "2026-04-07",
+      "memo": "Deterministic customer receipt",
+      "lines": [
+        {
+          "ledger": "Bank",
+          "dc": "debit",
+          "amount": 170.0
+        },
+        {
+          "ledger": "Customer A",
+          "dc": "credit",
+          "amount": 170.0
+        }
+      ]
+    },
+    {
+      "externalId": "ST00008",
+      "entryType": "Journal",
+      "postingDate": "2026-04-08",
+      "memo": "Deterministic receivable setup",
+      "lines": [
+        {
+          "ledger": "Customer A",
+          "dc": "debit",
+          "amount": 180.0
+        },
+        {
+          "ledger": "Sales",
+          "dc": "credit",
+          "amount": 180.0
+        }
+      ]
+    },
+    {
+      "externalId": "ST00009",
+      "entryType": "Sales",
+      "postingDate": "2026-04-09",
+      "memo": "Deterministic cash sale",
+      "lines": [
+        {
+          "ledger": "Cash",
+          "dc": "debit",
+          "amount": 190.0
+        },
+        {
+          "ledger": "Sales",
+          "dc": "credit",
+          "amount": 190.0
+        }
+      ]
+    },
+    {
+      "externalId": "ST00010",
+      "entryType": "Purchase",
+      "postingDate": "2026-04-10",
+      "memo": "Deterministic credit purchase",
+      "lines": [
+        {
+          "ledger": "Purchase",
+          "dc": "debit",
+          "amount": 200.0
+        },
+        {
+          "ledger": "Supplier A",
+          "dc": "credit",
+          "amount": 200.0
+        }
+      ]
+    },
+    {
+      "externalId": "ST00011",
+      "entryType": "Receipt",
+      "postingDate": "2026-04-11",
+      "memo": "Deterministic customer receipt",
+      "lines": [
+        {
+          "ledger": "Bank",
+          "dc": "debit",
+          "amount": 210.0
+        },
+        {
+          "ledger": "Customer A",
+          "dc": "credit",
+          "amount": 210.0
+        }
+      ]
+    },
+    {
+      "externalId": "ST00012",
+      "entryType": "Journal",
+      "postingDate": "2026-04-12",
+      "memo": "Deterministic receivable setup",
+      "lines": [
+        {
+          "ledger": "Customer A",
+          "dc": "debit",
+          "amount": 220.0
+        },
+        {
+          "ledger": "Sales",
+          "dc": "credit",
+          "amount": 220.0
+        }
+      ]
+    },
+    {
+      "externalId": "ST00013",
+      "entryType": "Sales",
+      "postingDate": "2026-04-13",
+      "memo": "Deterministic cash sale",
+      "lines": [
+        {
+          "ledger": "Cash",
+          "dc": "debit",
+          "amount": 230.0
+        },
+        {
+          "ledger": "Sales",
+          "dc": "credit",
+          "amount": 230.0
+        }
+      ]
+    },
+    {
+      "externalId": "ST00014",
+      "entryType": "Purchase",
+      "postingDate": "2026-04-14",
+      "memo": "Deterministic credit purchase",
+      "lines": [
+        {
+          "ledger": "Purchase",
+          "dc": "debit",
+          "amount": 240.0
+        },
+        {
+          "ledger": "Supplier A",
+          "dc": "credit",
+          "amount": 240.0
+        }
+      ]
+    },
+    {
+      "externalId": "ST00015",
+      "entryType": "Receipt",
+      "postingDate": "2026-04-15",
+      "memo": "Deterministic customer receipt",
+      "lines": [
+        {
+          "ledger": "Bank",
+          "dc": "debit",
+          "amount": 250.0
+        },
+        {
+          "ledger": "Customer A",
+          "dc": "credit",
+          "amount": 250.0
+        }
+      ]
+    },
+    {
+      "externalId": "ST00016",
+      "entryType": "Journal",
+      "postingDate": "2026-04-16",
+      "memo": "Deterministic receivable setup",
+      "lines": [
+        {
+          "ledger": "Customer A",
+          "dc": "debit",
+          "amount": 260.0
+        },
+        {
+          "ledger": "Sales",
+          "dc": "credit",
+          "amount": 260.0
+        }
+      ]
+    },
+    {
+      "externalId": "ST00017",
+      "entryType": "Sales",
+      "postingDate": "2026-04-17",
+      "memo": "Deterministic cash sale",
+      "lines": [
+        {
+          "ledger": "Cash",
+          "dc": "debit",
+          "amount": 270.0
+        },
+        {
+          "ledger": "Sales",
+          "dc": "credit",
+          "amount": 270.0
+        }
+      ]
+    },
+    {
+      "externalId": "ST00018",
+      "entryType": "Purchase",
+      "postingDate": "2026-04-18",
+      "memo": "Deterministic credit purchase",
+      "lines": [
+        {
+          "ledger": "Purchase",
+          "dc": "debit",
+          "amount": 280.0
+        },
+        {
+          "ledger": "Supplier A",
+          "dc": "credit",
+          "amount": 280.0
+        }
+      ]
+    },
+    {
+      "externalId": "ST00019",
+      "entryType": "Receipt",
+      "postingDate": "2026-04-19",
+      "memo": "Deterministic customer receipt",
+      "lines": [
+        {
+          "ledger": "Bank",
+          "dc": "debit",
+          "amount": 290.0
+        },
+        {
+          "ledger": "Customer A",
+          "dc": "credit",
+          "amount": 290.0
+        }
+      ]
+    },
+    {
+      "externalId": "ST00020",
+      "entryType": "Journal",
+      "postingDate": "2026-04-20",
+      "memo": "Deterministic receivable setup",
+      "lines": [
+        {
+          "ledger": "Customer A",
+          "dc": "debit",
+          "amount": 300.0
+        },
+        {
+          "ledger": "Sales",
+          "dc": "credit",
+          "amount": 300.0
+        }
+      ]
+    },
+    {
+      "externalId": "ST00021",
+      "entryType": "Sales",
+      "postingDate": "2026-04-21",
+      "memo": "Deterministic cash sale",
+      "lines": [
+        {
+          "ledger": "Cash",
+          "dc": "debit",
+          "amount": 310.0
+        },
+        {
+          "ledger": "Sales",
+          "dc": "credit",
+          "amount": 310.0
+        }
+      ]
+    },
+    {
+      "externalId": "ST00022",
+      "entryType": "Purchase",
+      "postingDate": "2026-04-22",
+      "memo": "Deterministic credit purchase",
+      "lines": [
+        {
+          "ledger": "Purchase",
+          "dc": "debit",
+          "amount": 320.0
+        },
+        {
+          "ledger": "Supplier A",
+          "dc": "credit",
+          "amount": 320.0
+        }
+      ]
+    },
+    {
+      "externalId": "ST00023",
+      "entryType": "Receipt",
+      "postingDate": "2026-04-23",
+      "memo": "Deterministic customer receipt",
+      "lines": [
+        {
+          "ledger": "Bank",
+          "dc": "debit",
+          "amount": 330.0
+        },
+        {
+          "ledger": "Customer A",
+          "dc": "credit",
+          "amount": 330.0
+        }
+      ]
+    },
+    {
+      "externalId": "ST00024",
+      "entryType": "Journal",
+      "postingDate": "2026-04-24",
+      "memo": "Deterministic receivable setup",
+      "lines": [
+        {
+          "ledger": "Customer A",
+          "dc": "debit",
+          "amount": 340.0
+        },
+        {
+          "ledger": "Sales",
+          "dc": "credit",
+          "amount": 340.0
+        }
+      ]
+    },
+    {
+      "externalId": "ST00025",
+      "entryType": "Sales",
+      "postingDate": "2026-04-25",
+      "memo": "Deterministic cash sale",
+      "lines": [
+        {
+          "ledger": "Cash",
+          "dc": "debit",
+          "amount": 350.0
+        },
+        {
+          "ledger": "Sales",
+          "dc": "credit",
+          "amount": 350.0
+        }
+      ]
+    },
+    {
+      "externalId": "ST00026",
+      "entryType": "Purchase",
+      "postingDate": "2026-04-26",
+      "memo": "Deterministic credit purchase",
+      "lines": [
+        {
+          "ledger": "Purchase",
+          "dc": "debit",
+          "amount": 360.0
+        },
+        {
+          "ledger": "Supplier A",
+          "dc": "credit",
+          "amount": 360.0
+        }
+      ]
+    },
+    {
+      "externalId": "ST00027",
+      "entryType": "Receipt",
+      "postingDate": "2026-04-27",
+      "memo": "Deterministic customer receipt",
+      "lines": [
+        {
+          "ledger": "Bank",
+          "dc": "debit",
+          "amount": 370.0
+        },
+        {
+          "ledger": "Customer A",
+          "dc": "credit",
+          "amount": 370.0
+        }
+      ]
+    },
+    {
+      "externalId": "ST00028",
+      "entryType": "Journal",
+      "postingDate": "2026-04-28",
+      "memo": "Deterministic receivable setup",
+      "lines": [
+        {
+          "ledger": "Customer A",
+          "dc": "debit",
+          "amount": 380.0
+        },
+        {
+          "ledger": "Sales",
+          "dc": "credit",
+          "amount": 380.0
+        }
+      ]
+    },
+    {
+      "externalId": "ST00029",
+      "entryType": "Sales",
+      "postingDate": "2026-04-01",
+      "memo": "Deterministic cash sale",
+      "lines": [
+        {
+          "ledger": "Cash",
+          "dc": "debit",
+          "amount": 390.0
+        },
+        {
+          "ledger": "Sales",
+          "dc": "credit",
+          "amount": 390.0
+        }
+      ]
+    },
+    {
+      "externalId": "ST00030",
+      "entryType": "Purchase",
+      "postingDate": "2026-04-02",
+      "memo": "Deterministic credit purchase",
+      "lines": [
+        {
+          "ledger": "Purchase",
+          "dc": "debit",
+          "amount": 400.0
+        },
+        {
+          "ledger": "Supplier A",
+          "dc": "credit",
+          "amount": 400.0
+        }
+      ]
+    },
+    {
+      "externalId": "ST00031",
+      "entryType": "Receipt",
+      "postingDate": "2026-04-03",
+      "memo": "Deterministic customer receipt",
+      "lines": [
+        {
+          "ledger": "Bank",
+          "dc": "debit",
+          "amount": 410.0
+        },
+        {
+          "ledger": "Customer A",
+          "dc": "credit",
+          "amount": 410.0
+        }
+      ]
+    },
+    {
+      "externalId": "ST00032",
+      "entryType": "Journal",
+      "postingDate": "2026-04-04",
+      "memo": "Deterministic receivable setup",
+      "lines": [
+        {
+          "ledger": "Customer A",
+          "dc": "debit",
+          "amount": 420.0
+        },
+        {
+          "ledger": "Sales",
+          "dc": "credit",
+          "amount": 420.0
+        }
+      ]
+    },
+    {
+      "externalId": "ST00033",
+      "entryType": "Sales",
+      "postingDate": "2026-04-05",
+      "memo": "Deterministic cash sale",
+      "lines": [
+        {
+          "ledger": "Cash",
+          "dc": "debit",
+          "amount": 430.0
+        },
+        {
+          "ledger": "Sales",
+          "dc": "credit",
+          "amount": 430.0
+        }
+      ]
+    },
+    {
+      "externalId": "ST00034",
+      "entryType": "Purchase",
+      "postingDate": "2026-04-06",
+      "memo": "Deterministic credit purchase",
+      "lines": [
+        {
+          "ledger": "Purchase",
+          "dc": "debit",
+          "amount": 440.0
+        },
+        {
+          "ledger": "Supplier A",
+          "dc": "credit",
+          "amount": 440.0
+        }
+      ]
+    },
+    {
+      "externalId": "ST00035",
+      "entryType": "Receipt",
+      "postingDate": "2026-04-07",
+      "memo": "Deterministic customer receipt",
+      "lines": [
+        {
+          "ledger": "Bank",
+          "dc": "debit",
+          "amount": 450.0
+        },
+        {
+          "ledger": "Customer A",
+          "dc": "credit",
+          "amount": 450.0
+        }
+      ]
+    },
+    {
+      "externalId": "ST00036",
+      "entryType": "Journal",
+      "postingDate": "2026-04-08",
+      "memo": "Deterministic receivable setup",
+      "lines": [
+        {
+          "ledger": "Customer A",
+          "dc": "debit",
+          "amount": 460.0
+        },
+        {
+          "ledger": "Sales",
+          "dc": "credit",
+          "amount": 460.0
+        }
+      ]
+    },
+    {
+      "externalId": "ST00037",
+      "entryType": "Sales",
+      "postingDate": "2026-04-09",
+      "memo": "Deterministic cash sale",
+      "lines": [
+        {
+          "ledger": "Cash",
+          "dc": "debit",
+          "amount": 100.0
+        },
+        {
+          "ledger": "Sales",
+          "dc": "credit",
+          "amount": 100.0
+        }
+      ]
+    },
+    {
+      "externalId": "ST00038",
+      "entryType": "Purchase",
+      "postingDate": "2026-04-10",
+      "memo": "Deterministic credit purchase",
+      "lines": [
+        {
+          "ledger": "Purchase",
+          "dc": "debit",
+          "amount": 110.0
+        },
+        {
+          "ledger": "Supplier A",
+          "dc": "credit",
+          "amount": 110.0
+        }
+      ]
+    },
+    {
+      "externalId": "ST00039",
+      "entryType": "Receipt",
+      "postingDate": "2026-04-11",
+      "memo": "Deterministic customer receipt",
+      "lines": [
+        {
+          "ledger": "Bank",
+          "dc": "debit",
+          "amount": 120.0
+        },
+        {
+          "ledger": "Customer A",
+          "dc": "credit",
+          "amount": 120.0
+        }
+      ]
+    },
+    {
+      "externalId": "ST00040",
+      "entryType": "Journal",
+      "postingDate": "2026-04-12",
+      "memo": "Deterministic receivable setup",
+      "lines": [
+        {
+          "ledger": "Customer A",
+          "dc": "debit",
+          "amount": 130.0
+        },
+        {
+          "ledger": "Sales",
+          "dc": "credit",
+          "amount": 130.0
+        }
+      ]
+    },
+    {
+      "externalId": "ST00041",
+      "entryType": "Sales",
+      "postingDate": "2026-04-13",
+      "memo": "Deterministic cash sale",
+      "lines": [
+        {
+          "ledger": "Cash",
+          "dc": "debit",
+          "amount": 140.0
+        },
+        {
+          "ledger": "Sales",
+          "dc": "credit",
+          "amount": 140.0
+        }
+      ]
+    },
+    {
+      "externalId": "ST00042",
+      "entryType": "Purchase",
+      "postingDate": "2026-04-14",
+      "memo": "Deterministic credit purchase",
+      "lines": [
+        {
+          "ledger": "Purchase",
+          "dc": "debit",
+          "amount": 150.0
+        },
+        {
+          "ledger": "Supplier A",
+          "dc": "credit",
+          "amount": 150.0
+        }
+      ]
+    },
+    {
+      "externalId": "ST00043",
+      "entryType": "Receipt",
+      "postingDate": "2026-04-15",
+      "memo": "Deterministic customer receipt",
+      "lines": [
+        {
+          "ledger": "Bank",
+          "dc": "debit",
+          "amount": 160.0
+        },
+        {
+          "ledger": "Customer A",
+          "dc": "credit",
+          "amount": 160.0
+        }
+      ]
+    },
+    {
+      "externalId": "ST00044",
+      "entryType": "Journal",
+      "postingDate": "2026-04-16",
+      "memo": "Deterministic receivable setup",
+      "lines": [
+        {
+          "ledger": "Customer A",
+          "dc": "debit",
+          "amount": 170.0
+        },
+        {
+          "ledger": "Sales",
+          "dc": "credit",
+          "amount": 170.0
+        }
+      ]
+    },
+    {
+      "externalId": "ST00045",
+      "entryType": "Sales",
+      "postingDate": "2026-04-17",
+      "memo": "Deterministic cash sale",
+      "lines": [
+        {
+          "ledger": "Cash",
+          "dc": "debit",
+          "amount": 180.0
+        },
+        {
+          "ledger": "Sales",
+          "dc": "credit",
+          "amount": 180.0
+        }
+      ]
+    },
+    {
+      "externalId": "ST00046",
+      "entryType": "Purchase",
+      "postingDate": "2026-04-18",
+      "memo": "Deterministic credit purchase",
+      "lines": [
+        {
+          "ledger": "Purchase",
+          "dc": "debit",
+          "amount": 190.0
+        },
+        {
+          "ledger": "Supplier A",
+          "dc": "credit",
+          "amount": 190.0
+        }
+      ]
+    },
+    {
+      "externalId": "ST00047",
+      "entryType": "Receipt",
+      "postingDate": "2026-04-19",
+      "memo": "Deterministic customer receipt",
+      "lines": [
+        {
+          "ledger": "Bank",
+          "dc": "debit",
+          "amount": 200.0
+        },
+        {
+          "ledger": "Customer A",
+          "dc": "credit",
+          "amount": 200.0
+        }
+      ]
+    },
+    {
+      "externalId": "ST00048",
+      "entryType": "Journal",
+      "postingDate": "2026-04-20",
+      "memo": "Deterministic receivable setup",
+      "lines": [
+        {
+          "ledger": "Customer A",
+          "dc": "debit",
+          "amount": 210.0
+        },
+        {
+          "ledger": "Sales",
+          "dc": "credit",
+          "amount": 210.0
+        }
+      ]
+    },
+    {
+      "externalId": "ST00049",
+      "entryType": "Sales",
+      "postingDate": "2026-04-21",
+      "memo": "Deterministic cash sale",
+      "lines": [
+        {
+          "ledger": "Cash",
+          "dc": "debit",
+          "amount": 220.0
+        },
+        {
+          "ledger": "Sales",
+          "dc": "credit",
+          "amount": 220.0
+        }
+      ]
+    },
+    {
+      "externalId": "ST00050",
+      "entryType": "Purchase",
+      "postingDate": "2026-04-22",
+      "memo": "Deterministic credit purchase",
+      "lines": [
+        {
+          "ledger": "Purchase",
+          "dc": "debit",
+          "amount": 230.0
+        },
+        {
+          "ledger": "Supplier A",
+          "dc": "credit",
+          "amount": 230.0
+        }
+      ]
+    },
+    {
+      "externalId": "ST00051",
+      "entryType": "Receipt",
+      "postingDate": "2026-04-23",
+      "memo": "Deterministic customer receipt",
+      "lines": [
+        {
+          "ledger": "Bank",
+          "dc": "debit",
+          "amount": 240.0
+        },
+        {
+          "ledger": "Customer A",
+          "dc": "credit",
+          "amount": 240.0
+        }
+      ]
+    },
+    {
+      "externalId": "ST00052",
+      "entryType": "Journal",
+      "postingDate": "2026-04-24",
+      "memo": "Deterministic receivable setup",
+      "lines": [
+        {
+          "ledger": "Customer A",
+          "dc": "debit",
+          "amount": 250.0
+        },
+        {
+          "ledger": "Sales",
+          "dc": "credit",
+          "amount": 250.0
+        }
+      ]
+    },
+    {
+      "externalId": "ST00053",
+      "entryType": "Sales",
+      "postingDate": "2026-04-25",
+      "memo": "Deterministic cash sale",
+      "lines": [
+        {
+          "ledger": "Cash",
+          "dc": "debit",
+          "amount": 260.0
+        },
+        {
+          "ledger": "Sales",
+          "dc": "credit",
+          "amount": 260.0
+        }
+      ]
+    },
+    {
+      "externalId": "ST00054",
+      "entryType": "Purchase",
+      "postingDate": "2026-04-26",
+      "memo": "Deterministic credit purchase",
+      "lines": [
+        {
+          "ledger": "Purchase",
+          "dc": "debit",
+          "amount": 270.0
+        },
+        {
+          "ledger": "Supplier A",
+          "dc": "credit",
+          "amount": 270.0
+        }
+      ]
+    },
+    {
+      "externalId": "ST00055",
+      "entryType": "Receipt",
+      "postingDate": "2026-04-27",
+      "memo": "Deterministic customer receipt",
+      "lines": [
+        {
+          "ledger": "Bank",
+          "dc": "debit",
+          "amount": 280.0
+        },
+        {
+          "ledger": "Customer A",
+          "dc": "credit",
+          "amount": 280.0
+        }
+      ]
+    },
+    {
+      "externalId": "ST00056",
+      "entryType": "Journal",
+      "postingDate": "2026-04-28",
+      "memo": "Deterministic receivable setup",
+      "lines": [
+        {
+          "ledger": "Customer A",
+          "dc": "debit",
+          "amount": 290.0
+        },
+        {
+          "ledger": "Sales",
+          "dc": "credit",
+          "amount": 290.0
+        }
+      ]
+    },
+    {
+      "externalId": "ST00057",
+      "entryType": "Sales",
+      "postingDate": "2026-04-01",
+      "memo": "Deterministic cash sale",
+      "lines": [
+        {
+          "ledger": "Cash",
+          "dc": "debit",
+          "amount": 300.0
+        },
+        {
+          "ledger": "Sales",
+          "dc": "credit",
+          "amount": 300.0
+        }
+      ]
+    },
+    {
+      "externalId": "ST00058",
+      "entryType": "Purchase",
+      "postingDate": "2026-04-02",
+      "memo": "Deterministic credit purchase",
+      "lines": [
+        {
+          "ledger": "Purchase",
+          "dc": "debit",
+          "amount": 310.0
+        },
+        {
+          "ledger": "Supplier A",
+          "dc": "credit",
+          "amount": 310.0
+        }
+      ]
+    },
+    {
+      "externalId": "ST00059",
+      "entryType": "Receipt",
+      "postingDate": "2026-04-03",
+      "memo": "Deterministic customer receipt",
+      "lines": [
+        {
+          "ledger": "Bank",
+          "dc": "debit",
+          "amount": 320.0
+        },
+        {
+          "ledger": "Customer A",
+          "dc": "credit",
+          "amount": 320.0
+        }
+      ]
+    },
+    {
+      "externalId": "ST00060",
+      "entryType": "Journal",
+      "postingDate": "2026-04-04",
+      "memo": "Deterministic receivable setup",
+      "lines": [
+        {
+          "ledger": "Customer A",
+          "dc": "debit",
+          "amount": 330.0
+        },
+        {
+          "ledger": "Sales",
+          "dc": "credit",
+          "amount": 330.0
+        }
+      ]
+    },
+    {
+      "externalId": "ST00061",
+      "entryType": "Sales",
+      "postingDate": "2026-04-05",
+      "memo": "Deterministic cash sale",
+      "lines": [
+        {
+          "ledger": "Cash",
+          "dc": "debit",
+          "amount": 340.0
+        },
+        {
+          "ledger": "Sales",
+          "dc": "credit",
+          "amount": 340.0
+        }
+      ]
+    },
+    {
+      "externalId": "ST00062",
+      "entryType": "Purchase",
+      "postingDate": "2026-04-06",
+      "memo": "Deterministic credit purchase",
+      "lines": [
+        {
+          "ledger": "Purchase",
+          "dc": "debit",
+          "amount": 350.0
+        },
+        {
+          "ledger": "Supplier A",
+          "dc": "credit",
+          "amount": 350.0
+        }
+      ]
+    },
+    {
+      "externalId": "ST00063",
+      "entryType": "Receipt",
+      "postingDate": "2026-04-07",
+      "memo": "Deterministic customer receipt",
+      "lines": [
+        {
+          "ledger": "Bank",
+          "dc": "debit",
+          "amount": 360.0
+        },
+        {
+          "ledger": "Customer A",
+          "dc": "credit",
+          "amount": 360.0
+        }
+      ]
+    },
+    {
+      "externalId": "ST00064",
+      "entryType": "Journal",
+      "postingDate": "2026-04-08",
+      "memo": "Deterministic receivable setup",
+      "lines": [
+        {
+          "ledger": "Customer A",
+          "dc": "debit",
+          "amount": 370.0
+        },
+        {
+          "ledger": "Sales",
+          "dc": "credit",
+          "amount": 370.0
+        }
+      ]
+    },
+    {
+      "externalId": "ST00065",
+      "entryType": "Sales",
+      "postingDate": "2026-04-09",
+      "memo": "Deterministic cash sale",
+      "lines": [
+        {
+          "ledger": "Cash",
+          "dc": "debit",
+          "amount": 380.0
+        },
+        {
+          "ledger": "Sales",
+          "dc": "credit",
+          "amount": 380.0
+        }
+      ]
+    },
+    {
+      "externalId": "ST00066",
+      "entryType": "Purchase",
+      "postingDate": "2026-04-10",
+      "memo": "Deterministic credit purchase",
+      "lines": [
+        {
+          "ledger": "Purchase",
+          "dc": "debit",
+          "amount": 390.0
+        },
+        {
+          "ledger": "Supplier A",
+          "dc": "credit",
+          "amount": 390.0
+        }
+      ]
+    },
+    {
+      "externalId": "ST00067",
+      "entryType": "Receipt",
+      "postingDate": "2026-04-11",
+      "memo": "Deterministic customer receipt",
+      "lines": [
+        {
+          "ledger": "Bank",
+          "dc": "debit",
+          "amount": 400.0
+        },
+        {
+          "ledger": "Customer A",
+          "dc": "credit",
+          "amount": 400.0
+        }
+      ]
+    },
+    {
+      "externalId": "ST00068",
+      "entryType": "Journal",
+      "postingDate": "2026-04-12",
+      "memo": "Deterministic receivable setup",
+      "lines": [
+        {
+          "ledger": "Customer A",
+          "dc": "debit",
+          "amount": 410.0
+        },
+        {
+          "ledger": "Sales",
+          "dc": "credit",
+          "amount": 410.0
+        }
+      ]
+    },
+    {
+      "externalId": "ST00069",
+      "entryType": "Sales",
+      "postingDate": "2026-04-13",
+      "memo": "Deterministic cash sale",
+      "lines": [
+        {
+          "ledger": "Cash",
+          "dc": "debit",
+          "amount": 420.0
+        },
+        {
+          "ledger": "Sales",
+          "dc": "credit",
+          "amount": 420.0
+        }
+      ]
+    },
+    {
+      "externalId": "ST00070",
+      "entryType": "Purchase",
+      "postingDate": "2026-04-14",
+      "memo": "Deterministic credit purchase",
+      "lines": [
+        {
+          "ledger": "Purchase",
+          "dc": "debit",
+          "amount": 430.0
+        },
+        {
+          "ledger": "Supplier A",
+          "dc": "credit",
+          "amount": 430.0
+        }
+      ]
+    },
+    {
+      "externalId": "ST00071",
+      "entryType": "Receipt",
+      "postingDate": "2026-04-15",
+      "memo": "Deterministic customer receipt",
+      "lines": [
+        {
+          "ledger": "Bank",
+          "dc": "debit",
+          "amount": 440.0
+        },
+        {
+          "ledger": "Customer A",
+          "dc": "credit",
+          "amount": 440.0
+        }
+      ]
+    },
+    {
+      "externalId": "ST00072",
+      "entryType": "Journal",
+      "postingDate": "2026-04-16",
+      "memo": "Deterministic receivable setup",
+      "lines": [
+        {
+          "ledger": "Customer A",
+          "dc": "debit",
+          "amount": 450.0
+        },
+        {
+          "ledger": "Sales",
+          "dc": "credit",
+          "amount": 450.0
+        }
+      ]
+    },
+    {
+      "externalId": "ST00073",
+      "entryType": "Sales",
+      "postingDate": "2026-04-17",
+      "memo": "Deterministic cash sale",
+      "lines": [
+        {
+          "ledger": "Cash",
+          "dc": "debit",
+          "amount": 460.0
+        },
+        {
+          "ledger": "Sales",
+          "dc": "credit",
+          "amount": 460.0
+        }
+      ]
+    },
+    {
+      "externalId": "ST00074",
+      "entryType": "Purchase",
+      "postingDate": "2026-04-18",
+      "memo": "Deterministic credit purchase",
+      "lines": [
+        {
+          "ledger": "Purchase",
+          "dc": "debit",
+          "amount": 100.0
+        },
+        {
+          "ledger": "Supplier A",
+          "dc": "credit",
+          "amount": 100.0
+        }
+      ]
+    },
+    {
+      "externalId": "ST00075",
+      "entryType": "Receipt",
+      "postingDate": "2026-04-19",
+      "memo": "Deterministic customer receipt",
+      "lines": [
+        {
+          "ledger": "Bank",
+          "dc": "debit",
+          "amount": 110.0
+        },
+        {
+          "ledger": "Customer A",
+          "dc": "credit",
+          "amount": 110.0
+        }
+      ]
+    },
+    {
+      "externalId": "ST00076",
+      "entryType": "Journal",
+      "postingDate": "2026-04-20",
+      "memo": "Deterministic receivable setup",
+      "lines": [
+        {
+          "ledger": "Customer A",
+          "dc": "debit",
+          "amount": 120.0
+        },
+        {
+          "ledger": "Sales",
+          "dc": "credit",
+          "amount": 120.0
+        }
+      ]
+    },
+    {
+      "externalId": "ST00077",
+      "entryType": "Sales",
+      "postingDate": "2026-04-21",
+      "memo": "Deterministic cash sale",
+      "lines": [
+        {
+          "ledger": "Cash",
+          "dc": "debit",
+          "amount": 130.0
+        },
+        {
+          "ledger": "Sales",
+          "dc": "credit",
+          "amount": 130.0
+        }
+      ]
+    },
+    {
+      "externalId": "ST00078",
+      "entryType": "Purchase",
+      "postingDate": "2026-04-22",
+      "memo": "Deterministic credit purchase",
+      "lines": [
+        {
+          "ledger": "Purchase",
+          "dc": "debit",
+          "amount": 140.0
+        },
+        {
+          "ledger": "Supplier A",
+          "dc": "credit",
+          "amount": 140.0
+        }
+      ]
+    },
+    {
+      "externalId": "ST00079",
+      "entryType": "Receipt",
+      "postingDate": "2026-04-23",
+      "memo": "Deterministic customer receipt",
+      "lines": [
+        {
+          "ledger": "Bank",
+          "dc": "debit",
+          "amount": 150.0
+        },
+        {
+          "ledger": "Customer A",
+          "dc": "credit",
+          "amount": 150.0
+        }
+      ]
+    },
+    {
+      "externalId": "ST00080",
+      "entryType": "Journal",
+      "postingDate": "2026-04-24",
+      "memo": "Deterministic receivable setup",
+      "lines": [
+        {
+          "ledger": "Customer A",
+          "dc": "debit",
+          "amount": 160.0
+        },
+        {
+          "ledger": "Sales",
+          "dc": "credit",
+          "amount": 160.0
+        }
+      ]
+    },
+    {
+      "externalId": "ST00081",
+      "entryType": "Sales",
+      "postingDate": "2026-04-25",
+      "memo": "Deterministic cash sale",
+      "lines": [
+        {
+          "ledger": "Cash",
+          "dc": "debit",
+          "amount": 170.0
+        },
+        {
+          "ledger": "Sales",
+          "dc": "credit",
+          "amount": 170.0
+        }
+      ]
+    },
+    {
+      "externalId": "ST00082",
+      "entryType": "Purchase",
+      "postingDate": "2026-04-26",
+      "memo": "Deterministic credit purchase",
+      "lines": [
+        {
+          "ledger": "Purchase",
+          "dc": "debit",
+          "amount": 180.0
+        },
+        {
+          "ledger": "Supplier A",
+          "dc": "credit",
+          "amount": 180.0
+        }
+      ]
+    },
+    {
+      "externalId": "ST00083",
+      "entryType": "Receipt",
+      "postingDate": "2026-04-27",
+      "memo": "Deterministic customer receipt",
+      "lines": [
+        {
+          "ledger": "Bank",
+          "dc": "debit",
+          "amount": 190.0
+        },
+        {
+          "ledger": "Customer A",
+          "dc": "credit",
+          "amount": 190.0
+        }
+      ]
+    },
+    {
+      "externalId": "ST00084",
+      "entryType": "Journal",
+      "postingDate": "2026-04-28",
+      "memo": "Deterministic receivable setup",
+      "lines": [
+        {
+          "ledger": "Customer A",
+          "dc": "debit",
+          "amount": 200.0
+        },
+        {
+          "ledger": "Sales",
+          "dc": "credit",
+          "amount": 200.0
+        }
+      ]
+    },
+    {
+      "externalId": "ST00085",
+      "entryType": "Sales",
+      "postingDate": "2026-04-01",
+      "memo": "Deterministic cash sale",
+      "lines": [
+        {
+          "ledger": "Cash",
+          "dc": "debit",
+          "amount": 210.0
+        },
+        {
+          "ledger": "Sales",
+          "dc": "credit",
+          "amount": 210.0
+        }
+      ]
+    },
+    {
+      "externalId": "ST00086",
+      "entryType": "Purchase",
+      "postingDate": "2026-04-02",
+      "memo": "Deterministic credit purchase",
+      "lines": [
+        {
+          "ledger": "Purchase",
+          "dc": "debit",
+          "amount": 220.0
+        },
+        {
+          "ledger": "Supplier A",
+          "dc": "credit",
+          "amount": 220.0
+        }
+      ]
+    },
+    {
+      "externalId": "ST00087",
+      "entryType": "Receipt",
+      "postingDate": "2026-04-03",
+      "memo": "Deterministic customer receipt",
+      "lines": [
+        {
+          "ledger": "Bank",
+          "dc": "debit",
+          "amount": 230.0
+        },
+        {
+          "ledger": "Customer A",
+          "dc": "credit",
+          "amount": 230.0
+        }
+      ]
+    },
+    {
+      "externalId": "ST00088",
+      "entryType": "Journal",
+      "postingDate": "2026-04-04",
+      "memo": "Deterministic receivable setup",
+      "lines": [
+        {
+          "ledger": "Customer A",
+          "dc": "debit",
+          "amount": 240.0
+        },
+        {
+          "ledger": "Sales",
+          "dc": "credit",
+          "amount": 240.0
+        }
+      ]
+    },
+    {
+      "externalId": "ST00089",
+      "entryType": "Sales",
+      "postingDate": "2026-04-05",
+      "memo": "Deterministic cash sale",
+      "lines": [
+        {
+          "ledger": "Cash",
+          "dc": "debit",
+          "amount": 250.0
+        },
+        {
+          "ledger": "Sales",
+          "dc": "credit",
+          "amount": 250.0
+        }
+      ]
+    },
+    {
+      "externalId": "ST00090",
+      "entryType": "Purchase",
+      "postingDate": "2026-04-06",
+      "memo": "Deterministic credit purchase",
+      "lines": [
+        {
+          "ledger": "Purchase",
+          "dc": "debit",
+          "amount": 260.0
+        },
+        {
+          "ledger": "Supplier A",
+          "dc": "credit",
+          "amount": 260.0
+        }
+      ]
+    },
+    {
+      "externalId": "ST00091",
+      "entryType": "Receipt",
+      "postingDate": "2026-04-07",
+      "memo": "Deterministic customer receipt",
+      "lines": [
+        {
+          "ledger": "Bank",
+          "dc": "debit",
+          "amount": 270.0
+        },
+        {
+          "ledger": "Customer A",
+          "dc": "credit",
+          "amount": 270.0
+        }
+      ]
+    },
+    {
+      "externalId": "ST00092",
+      "entryType": "Journal",
+      "postingDate": "2026-04-08",
+      "memo": "Deterministic receivable setup",
+      "lines": [
+        {
+          "ledger": "Customer A",
+          "dc": "debit",
+          "amount": 280.0
+        },
+        {
+          "ledger": "Sales",
+          "dc": "credit",
+          "amount": 280.0
+        }
+      ]
+    },
+    {
+      "externalId": "ST00093",
+      "entryType": "Sales",
+      "postingDate": "2026-04-09",
+      "memo": "Deterministic cash sale",
+      "lines": [
+        {
+          "ledger": "Cash",
+          "dc": "debit",
+          "amount": 290.0
+        },
+        {
+          "ledger": "Sales",
+          "dc": "credit",
+          "amount": 290.0
+        }
+      ]
+    },
+    {
+      "externalId": "ST00094",
+      "entryType": "Purchase",
+      "postingDate": "2026-04-10",
+      "memo": "Deterministic credit purchase",
+      "lines": [
+        {
+          "ledger": "Purchase",
+          "dc": "debit",
+          "amount": 300.0
+        },
+        {
+          "ledger": "Supplier A",
+          "dc": "credit",
+          "amount": 300.0
+        }
+      ]
+    },
+    {
+      "externalId": "ST00095",
+      "entryType": "Receipt",
+      "postingDate": "2026-04-11",
+      "memo": "Deterministic customer receipt",
+      "lines": [
+        {
+          "ledger": "Bank",
+          "dc": "debit",
+          "amount": 310.0
+        },
+        {
+          "ledger": "Customer A",
+          "dc": "credit",
+          "amount": 310.0
+        }
+      ]
+    },
+    {
+      "externalId": "ST00096",
+      "entryType": "Journal",
+      "postingDate": "2026-04-12",
+      "memo": "Deterministic receivable setup",
+      "lines": [
+        {
+          "ledger": "Customer A",
+          "dc": "debit",
+          "amount": 320.0
+        },
+        {
+          "ledger": "Sales",
+          "dc": "credit",
+          "amount": 320.0
+        }
+      ]
+    },
+    {
+      "externalId": "ST00097",
+      "entryType": "Sales",
+      "postingDate": "2026-04-13",
+      "memo": "Deterministic cash sale",
+      "lines": [
+        {
+          "ledger": "Cash",
+          "dc": "debit",
+          "amount": 330.0
+        },
+        {
+          "ledger": "Sales",
+          "dc": "credit",
+          "amount": 330.0
+        }
+      ]
+    },
+    {
+      "externalId": "ST00098",
+      "entryType": "Purchase",
+      "postingDate": "2026-04-14",
+      "memo": "Deterministic credit purchase",
+      "lines": [
+        {
+          "ledger": "Purchase",
+          "dc": "debit",
+          "amount": 340.0
+        },
+        {
+          "ledger": "Supplier A",
+          "dc": "credit",
+          "amount": 340.0
+        }
+      ]
+    },
+    {
+      "externalId": "ST00099",
+      "entryType": "Receipt",
+      "postingDate": "2026-04-15",
+      "memo": "Deterministic customer receipt",
+      "lines": [
+        {
+          "ledger": "Bank",
+          "dc": "debit",
+          "amount": 350.0
+        },
+        {
+          "ledger": "Customer A",
+          "dc": "credit",
+          "amount": 350.0
+        }
+      ]
+    },
+    {
+      "externalId": "ST00100",
+      "entryType": "Journal",
+      "postingDate": "2026-04-16",
+      "memo": "Deterministic receivable setup",
+      "lines": [
+        {
+          "ledger": "Customer A",
+          "dc": "debit",
+          "amount": 360.0
+        },
+        {
+          "ledger": "Sales",
+          "dc": "credit",
+          "amount": 360.0
+        }
+      ]
+    }
+  ]
+}

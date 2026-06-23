@@ -1,0 +1,142 @@
+{
+  "trialBalance": [
+    {
+      "ledger": "Bank",
+      "group": "Bank Accounts",
+      "classification": "asset",
+      "debit": 0.0,
+      "credit": 500.0,
+      "neutralBalance": -500.0,
+      "tallySignedClosingBalance": 500.0
+    },
+    {
+      "ledger": "Purchase",
+      "group": "Purchase Accounts",
+      "classification": "expense",
+      "debit": 2600.0,
+      "credit": 0.0,
+      "neutralBalance": 2600.0,
+      "tallySignedClosingBalance": -2600.0
+    },
+    {
+      "ledger": "Supplier A",
+      "group": "Sundry Creditors",
+      "classification": "liability",
+      "debit": 0.0,
+      "credit": 800.0,
+      "neutralBalance": -800.0,
+      "tallySignedClosingBalance": 800.0
+    },
+    {
+      "ledger": "Supplier B",
+      "group": "Sundry Creditors",
+      "classification": "liability",
+      "debit": 0.0,
+      "credit": 700.0,
+      "neutralBalance": -700.0,
+      "tallySignedClosingBalance": 700.0
+    },
+    {
+      "ledger": "Supplier C",
+      "group": "Sundry Creditors",
+      "classification": "liability",
+      "debit": 0.0,
+      "credit": 600.0,
+      "neutralBalance": -600.0,
+      "tallySignedClosingBalance": 600.0
+    }
+  ],
+  "profitLoss": {
+    "rows": [
+      {
+        "ledger": "Purchase",
+        "classification": "expense",
+        "amount": -2600.0
+      }
+    ],
+    "netProfit": -2600.0
+  },
+  "balanceSheet": {
+    "rows": [
+      {
+        "ledger": "Bank",
+        "classification": "asset",
+        "closingBalance": 500.0
+      },
+      {
+        "ledger": "Supplier A",
+        "classification": "liability",
+        "closingBalance": 800.0
+      },
+      {
+        "ledger": "Supplier B",
+        "classification": "liability",
+        "closingBalance": 700.0
+      },
+      {
+        "ledger": "Supplier C",
+        "classification": "liability",
+        "closingBalance": 600.0
+      }
+    ],
+    "assetTotal": 500.0,
+    "liabilityEquityTotalBeforeProfit": 2100.0,
+    "netProfit": -2600.0,
+    "checkTotalWithProfit": 0.0
+  },
+  "ledgerBalances": {
+    "Bank": {
+      "ledger": "Bank",
+      "group": "Bank Accounts",
+      "classification": "asset",
+      "debit": 0.0,
+      "credit": 500.0,
+      "neutralBalance": -500.0,
+      "tallySignedClosingBalance": 500.0
+    },
+    "Purchase": {
+      "ledger": "Purchase",
+      "group": "Purchase Accounts",
+      "classification": "expense",
+      "debit": 2600.0,
+      "credit": 0.0,
+      "neutralBalance": 2600.0,
+      "tallySignedClosingBalance": -2600.0
+    },
+    "Supplier A": {
+      "ledger": "Supplier A",
+      "group": "Sundry Creditors",
+      "classification": "liability",
+      "debit": 0.0,
+      "credit": 800.0,
+      "neutralBalance": -800.0,
+      "tallySignedClosingBalance": 800.0
+    },
+    "Supplier B": {
+      "ledger": "Supplier B",
+      "group": "Sundry Creditors",
+      "classification": "liability",
+      "debit": 0.0,
+      "credit": 700.0,
+      "neutralBalance": -700.0,
+      "tallySignedClosingBalance": 700.0
+    },
+    "Supplier C": {
+      "ledger": "Supplier C",
+      "group": "Sundry Creditors",
+      "classification": "liability",
+      "debit": 0.0,
+      "credit": 600.0,
+      "neutralBalance": -600.0,
+      "tallySignedClosingBalance": 600.0
+    }
+  },
+  "closingBalances": {
+    "stockItems": []
+  },
+  "controlTotals": {
+    "totalDebits": 3100.0,
+    "totalCredits": 3100.0,
+    "balanced": true
+  }
+}

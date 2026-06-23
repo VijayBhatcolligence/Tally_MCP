@@ -1,0 +1,115 @@
+{
+  "company": {
+    "name": "Foundry Tally Test Co",
+    "fiscalYearFrom": "2026-04-01",
+    "booksBeginningFrom": "2026-04-01",
+    "currency": "INR"
+  },
+  "chartOfAccounts": [
+    {
+      "name": "Bank",
+      "group": "Bank Accounts",
+      "classification": "asset",
+      "openingBalance": 0.0
+    },
+    {
+      "name": "Purchase",
+      "group": "Purchase Accounts",
+      "classification": "expense",
+      "openingBalance": 0.0
+    },
+    {
+      "name": "Supplier A",
+      "group": "Sundry Creditors",
+      "classification": "liability",
+      "openingBalance": 0.0
+    },
+    {
+      "name": "Supplier B",
+      "group": "Sundry Creditors",
+      "classification": "liability",
+      "openingBalance": 0.0
+    },
+    {
+      "name": "Supplier C",
+      "group": "Sundry Creditors",
+      "classification": "liability",
+      "openingBalance": 0.0
+    }
+  ],
+  "stockItems": [],
+  "journalEntries": [
+    {
+      "externalId": "V001",
+      "entryType": "Purchase",
+      "postingDate": "2026-04-01",
+      "memo": "Purchase A",
+      "lines": [
+        {
+          "ledger": "Purchase",
+          "dc": "debit",
+          "amount": 800.0
+        },
+        {
+          "ledger": "Supplier A",
+          "dc": "credit",
+          "amount": 800.0
+        }
+      ]
+    },
+    {
+      "externalId": "V002",
+      "entryType": "Purchase",
+      "postingDate": "2026-04-02",
+      "memo": "Purchase B",
+      "lines": [
+        {
+          "ledger": "Purchase",
+          "dc": "debit",
+          "amount": 1200.0
+        },
+        {
+          "ledger": "Supplier B",
+          "dc": "credit",
+          "amount": 1200.0
+        }
+      ]
+    },
+    {
+      "externalId": "V003",
+      "entryType": "Purchase",
+      "postingDate": "2026-04-03",
+      "memo": "Purchase C",
+      "lines": [
+        {
+          "ledger": "Purchase",
+          "dc": "debit",
+          "amount": 600.0
+        },
+        {
+          "ledger": "Supplier C",
+          "dc": "credit",
+          "amount": 600.0
+        }
+      ]
+    },
+    {
+      "externalId": "V004",
+      "entryType": "Payment",
+      "postingDate": "2026-04-04",
+      "memo": "Payment B",
+      "lines": [
+        {
+          "ledger": "Supplier B",
+          "dc": "debit",
+          "amount": 500.0
+        },
+        {
+          "ledger": "Bank",
+          "dc": "credit",
+          "amount": 500.0
+        }
+      ]
+    }
+  ]
+}

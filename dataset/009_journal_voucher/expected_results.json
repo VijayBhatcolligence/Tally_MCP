@@ -1,0 +1,73 @@
+{
+  "trialBalance": [
+    {
+      "ledger": "Accrued Expenses",
+      "group": "Current Liabilities",
+      "classification": "liability",
+      "debit": 0.0,
+      "credit": 900.0,
+      "neutralBalance": -900.0,
+      "tallySignedClosingBalance": 900.0
+    },
+    {
+      "ledger": "Rent Expense",
+      "group": "Indirect Expenses",
+      "classification": "expense",
+      "debit": 900.0,
+      "credit": 0.0,
+      "neutralBalance": 900.0,
+      "tallySignedClosingBalance": -900.0
+    }
+  ],
+  "profitLoss": {
+    "rows": [
+      {
+        "ledger": "Rent Expense",
+        "classification": "expense",
+        "amount": -900.0
+      }
+    ],
+    "netProfit": -900.0
+  },
+  "balanceSheet": {
+    "rows": [
+      {
+        "ledger": "Accrued Expenses",
+        "classification": "liability",
+        "closingBalance": 900.0
+      }
+    ],
+    "assetTotal": 0.0,
+    "liabilityEquityTotalBeforeProfit": 900.0,
+    "netProfit": -900.0,
+    "checkTotalWithProfit": 0.0
+  },
+  "ledgerBalances": {
+    "Accrued Expenses": {
+      "ledger": "Accrued Expenses",
+      "group": "Current Liabilities",
+      "classification": "liability",
+      "debit": 0.0,
+      "credit": 900.0,
+      "neutralBalance": -900.0,
+      "tallySignedClosingBalance": 900.0
+    },
+    "Rent Expense": {
+      "ledger": "Rent Expense",
+      "group": "Indirect Expenses",
+      "classification": "expense",
+      "debit": 900.0,
+      "credit": 0.0,
+      "neutralBalance": 900.0,
+      "tallySignedClosingBalance": -900.0
+    }
+  },
+  "closingBalances": {
+    "stockItems": []
+  },
+  "controlTotals": {
+    "totalDebits": 900.0,
+    "totalCredits": 900.0,
+    "balanced": true
+  }
+}

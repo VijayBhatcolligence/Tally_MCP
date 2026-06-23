@@ -1,0 +1,67 @@
+{
+  "company": {
+    "name": "Foundry Tally Test Co",
+    "fiscalYearFrom": "2026-04-01",
+    "booksBeginningFrom": "2026-04-01",
+    "currency": "INR"
+  },
+  "chartOfAccounts": [
+    {
+      "name": "Capital",
+      "group": "Capital Account",
+      "classification": "equity",
+      "openingBalance": 0.0
+    },
+    {
+      "name": "Cash",
+      "group": "Cash-in-Hand",
+      "classification": "asset",
+      "openingBalance": 0.0
+    },
+    {
+      "name": "Bank",
+      "group": "Bank Accounts",
+      "classification": "asset",
+      "openingBalance": 0.0
+    }
+  ],
+  "stockItems": [],
+  "journalEntries": [
+    {
+      "externalId": "V001",
+      "entryType": "Journal",
+      "postingDate": "2026-04-01",
+      "memo": "Opening cash",
+      "lines": [
+        {
+          "ledger": "Cash",
+          "dc": "debit",
+          "amount": 5000.0
+        },
+        {
+          "ledger": "Capital",
+          "dc": "credit",
+          "amount": 5000.0
+        }
+      ]
+    },
+    {
+      "externalId": "V002",
+      "entryType": "Contra",
+      "postingDate": "2026-04-02",
+      "memo": "Cash deposit to bank",
+      "lines": [
+        {
+          "ledger": "Bank",
+          "dc": "debit",
+          "amount": 3000.0
+        },
+        {
+          "ledger": "Cash",
+          "dc": "credit",
+          "amount": 3000.0
+        }
+      ]
+    }
+  ]
+}

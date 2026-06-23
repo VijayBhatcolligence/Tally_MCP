@@ -1,0 +1,96 @@
+{
+  "trialBalance": [
+    {
+      "ledger": "Purchase",
+      "group": "Purchase Accounts",
+      "classification": "expense",
+      "debit": 2000.0,
+      "credit": 0.0,
+      "neutralBalance": 2000.0,
+      "tallySignedClosingBalance": -2000.0
+    },
+    {
+      "ledger": "Purchase Return",
+      "group": "Purchase Accounts",
+      "classification": "contra_expense",
+      "debit": 0.0,
+      "credit": 500.0,
+      "neutralBalance": -500.0,
+      "tallySignedClosingBalance": 500.0
+    },
+    {
+      "ledger": "Supplier A",
+      "group": "Sundry Creditors",
+      "classification": "liability",
+      "debit": 0.0,
+      "credit": 1500.0,
+      "neutralBalance": -1500.0,
+      "tallySignedClosingBalance": 1500.0
+    }
+  ],
+  "profitLoss": {
+    "rows": [
+      {
+        "ledger": "Purchase",
+        "classification": "expense",
+        "amount": -2000.0
+      },
+      {
+        "ledger": "Purchase Return",
+        "classification": "contra_expense",
+        "amount": 500.0
+      }
+    ],
+    "netProfit": -1500.0
+  },
+  "balanceSheet": {
+    "rows": [
+      {
+        "ledger": "Supplier A",
+        "classification": "liability",
+        "closingBalance": 1500.0
+      }
+    ],
+    "assetTotal": 0.0,
+    "liabilityEquityTotalBeforeProfit": 1500.0,
+    "netProfit": -1500.0,
+    "checkTotalWithProfit": 0.0
+  },
+  "ledgerBalances": {
+    "Purchase": {
+      "ledger": "Purchase",
+      "group": "Purchase Accounts",
+      "classification": "expense",
+      "debit": 2000.0,
+      "credit": 0.0,
+      "neutralBalance": 2000.0,
+      "tallySignedClosingBalance": -2000.0
+    },
+    "Purchase Return": {
+      "ledger": "Purchase Return",
+      "group": "Purchase Accounts",
+      "classification": "contra_expense",
+      "debit": 0.0,
+      "credit": 500.0,
+      "neutralBalance": -500.0,
+      "tallySignedClosingBalance": 500.0
+    },
+    "Supplier A": {
+      "ledger": "Supplier A",
+      "group": "Sundry Creditors",
+      "classification": "liability",
+      "debit": 0.0,
+      "credit": 1500.0,
+      "neutralBalance": -1500.0,
+      "tallySignedClosingBalance": 1500.0
+    }
+  },
+  "closingBalances": {
+    "stockItems": []
+  },
+  "controlTotals": {
+    "totalDebits": 2500.0,
+    "totalCredits": 2500.0,
+    "balanced": true
+  }
+}

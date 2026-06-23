@@ -1,0 +1,95 @@
+{
+  "trialBalance": [
+    {
+      "ledger": "Bank",
+      "group": "Bank Accounts",
+      "classification": "asset",
+      "debit": 3000.0,
+      "credit": 0.0,
+      "neutralBalance": 3000.0,
+      "tallySignedClosingBalance": -3000.0
+    },
+    {
+      "ledger": "Capital",
+      "group": "Capital Account",
+      "classification": "equity",
+      "debit": 0.0,
+      "credit": 5000.0,
+      "neutralBalance": -5000.0,
+      "tallySignedClosingBalance": 5000.0
+    },
+    {
+      "ledger": "Cash",
+      "group": "Cash-in-Hand",
+      "classification": "asset",
+      "debit": 2000.0,
+      "credit": 0.0,
+      "neutralBalance": 2000.0,
+      "tallySignedClosingBalance": -2000.0
+    }
+  ],
+  "profitLoss": {
+    "rows": [],
+    "netProfit": 0.0
+  },
+  "balanceSheet": {
+    "rows": [
+      {
+        "ledger": "Bank",
+        "classification": "asset",
+        "closingBalance": -3000.0
+      },
+      {
+        "ledger": "Capital",
+        "classification": "equity",
+        "closingBalance": 5000.0
+      },
+      {
+        "ledger": "Cash",
+        "classification": "asset",
+        "closingBalance": -2000.0
+      }
+    ],
+    "assetTotal": -5000.0,
+    "liabilityEquityTotalBeforeProfit": 5000.0,
+    "netProfit": 0.0,
+    "checkTotalWithProfit": 0.0
+  },
+  "ledgerBalances": {
+    "Bank": {
+      "ledger": "Bank",
+      "group": "Bank Accounts",
+      "classification": "asset",
+      "debit": 3000.0,
+      "credit": 0.0,
+      "neutralBalance": 3000.0,
+      "tallySignedClosingBalance": -3000.0
+    },
+    "Capital": {
+      "ledger": "Capital",
+      "group": "Capital Account",
+      "classification": "equity",
+      "debit": 0.0,
+      "credit": 5000.0,
+      "neutralBalance": -5000.0,
+      "tallySignedClosingBalance": 5000.0
+    },
+    "Cash": {
+      "ledger": "Cash",
+      "group": "Cash-in-Hand",
+      "classification": "asset",
+      "debit": 2000.0,
+      "credit": 0.0,
+      "neutralBalance": 2000.0,
+      "tallySignedClosingBalance": -2000.0
+    }
+  },
+  "closingBalances": {
+    "stockItems": []
+  },
+  "controlTotals": {
+    "totalDebits": 8000.0,
+    "totalCredits": 8000.0,
+    "balanced": true
+  }
+}

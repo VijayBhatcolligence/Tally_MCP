@@ -1,0 +1,91 @@
+{
+  "company": {
+    "name": "Foundry Tally Test Co",
+    "fiscalYearFrom": "2026-04-01",
+    "booksBeginningFrom": "2026-04-01",
+    "currency": "INR"
+  },
+  "chartOfAccounts": [
+    {
+      "name": "Cash",
+      "group": "Cash-in-Hand",
+      "classification": "asset",
+      "openingBalance": 0.0
+    },
+    {
+      "name": "Sales",
+      "group": "Sales Accounts",
+      "classification": "income",
+      "openingBalance": 0.0
+    },
+    {
+      "name": "Purchase",
+      "group": "Purchase Accounts",
+      "classification": "expense",
+      "openingBalance": 0.0
+    },
+    {
+      "name": "Rent Expense",
+      "group": "Indirect Expenses",
+      "classification": "expense",
+      "openingBalance": 0.0
+    }
+  ],
+  "stockItems": [],
+  "journalEntries": [
+    {
+      "externalId": "V001",
+      "entryType": "Sales",
+      "postingDate": "2026-04-01",
+      "memo": "Cash sale",
+      "lines": [
+        {
+          "ledger": "Cash",
+          "dc": "debit",
+          "amount": 5000.0
+        },
+        {
+          "ledger": "Sales",
+          "dc": "credit",
+          "amount": 5000.0
+        }
+      ]
+    },
+    {
+      "externalId": "V002",
+      "entryType": "Purchase",
+      "postingDate": "2026-04-02",
+      "memo": "Cash purchase",
+      "lines": [
+        {
+          "ledger": "Purchase",
+          "dc": "debit",
+          "amount": 1500.0
+        },
+        {
+          "ledger": "Cash",
+          "dc": "credit",
+          "amount": 1500.0
+        }
+      ]
+    },
+    {
+      "externalId": "V003",
+      "entryType": "Payment",
+      "postingDate": "2026-04-03",
+      "memo": "Rent paid",
+      "lines": [
+        {
+          "ledger": "Rent Expense",
+          "dc": "debit",
+          "amount": 700.0
+        },
+        {
+          "ledger": "Cash",
+          "dc": "credit",
+          "amount": 700.0
+        }
+      ]
+    }
+  ]
+}

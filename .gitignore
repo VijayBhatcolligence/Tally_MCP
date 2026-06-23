@@ -1,0 +1,8 @@
+node_modules/
+.env
+*.log
+*.sqlite
+*.sqlite-shm
+*.sqlite-wal
+skills/generate_accounting_test_datasets/.stress_5000_check/
+skills/generate_accounting_test_datasets/.factory_check/

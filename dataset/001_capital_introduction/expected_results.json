@@ -1,0 +1,72 @@
+{
+  "trialBalance": [
+    {
+      "ledger": "Capital",
+      "group": "Capital Account",
+      "classification": "equity",
+      "debit": 0.0,
+      "credit": 10000.0,
+      "neutralBalance": -10000.0,
+      "tallySignedClosingBalance": 10000.0
+    },
+    {
+      "ledger": "Cash",
+      "group": "Cash-in-Hand",
+      "classification": "asset",
+      "debit": 10000.0,
+      "credit": 0.0,
+      "neutralBalance": 10000.0,
+      "tallySignedClosingBalance": -10000.0
+    }
+  ],
+  "profitLoss": {
+    "rows": [],
+    "netProfit": 0.0
+  },
+  "balanceSheet": {
+    "rows": [
+      {
+        "ledger": "Capital",
+        "classification": "equity",
+        "closingBalance": 10000.0
+      },
+      {
+        "ledger": "Cash",
+        "classification": "asset",
+        "closingBalance": -10000.0
+      }
+    ],
+    "assetTotal": -10000.0,
+    "liabilityEquityTotalBeforeProfit": 10000.0,
+    "netProfit": 0.0,
+    "checkTotalWithProfit": 0.0
+  },
+  "ledgerBalances": {
+    "Capital": {
+      "ledger": "Capital",
+      "group": "Capital Account",
+      "classification": "equity",
+      "debit": 0.0,
+      "credit": 10000.0,
+      "neutralBalance": -10000.0,
+      "tallySignedClosingBalance": 10000.0
+    },
+    "Cash": {
+      "ledger": "Cash",
+      "group": "Cash-in-Hand",
+      "classification": "asset",
+      "debit": 10000.0,
+      "credit": 0.0,
+      "neutralBalance": 10000.0,
+      "tallySignedClosingBalance": -10000.0
+    }
+  },
+  "closingBalances": {
+    "stockItems": []
+  },
+  "controlTotals": {
+    "totalDebits": 10000.0,
+    "totalCredits": 10000.0,
+    "balanced": true
+  }
+}

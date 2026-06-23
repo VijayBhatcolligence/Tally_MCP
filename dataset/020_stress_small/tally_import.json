@@ -1,0 +1,1714 @@
+{
+  "company": {
+    "name": "Foundry Tally Test Co",
+    "fiscalYearFrom": "2026-04-01",
+    "booksBeginningFrom": "2026-04-01",
+    "currency": "INR"
+  },
+  "createGroupCalls": [
+    {
+      "name": "Capital Account",
+      "parent": "Primary"
+    },
+    {
+      "name": "Current Assets",
+      "parent": "Primary"
+    },
+    {
+      "name": "Current Liabilities",
+      "parent": "Primary"
+    },
+    {
+      "name": "Fixed Assets",
+      "parent": "Primary"
+    },
+    {
+      "name": "Direct Expenses",
+      "parent": "Primary"
+    },
+    {
+      "name": "Indirect Expenses",
+      "parent": "Primary"
+    },
+    {
+      "name": "Direct Incomes",
+      "parent": "Primary"
+    },
+    {
+      "name": "Indirect Incomes",
+      "parent": "Primary"
+    },
+    {
+      "name": "Sales Accounts",
+      "parent": "Direct Incomes"
+    },
+    {
+      "name": "Purchase Accounts",
+      "parent": "Direct Expenses"
+    },
+    {
+      "name": "Sundry Debtors",
+      "parent": "Current Assets"
+    },
+    {
+      "name": "Sundry Creditors",
+      "parent": "Current Liabilities"
+    },
+    {
+      "name": "Cash-in-Hand",
+      "parent": "Current Assets"
+    },
+    {
+      "name": "Bank Accounts",
+      "parent": "Current Assets"
+    },
+    {
+      "name": "Duties & Taxes",
+      "parent": "Current Liabilities"
+    },
+    {
+      "name": "Stock-in-Hand",
+      "parent": "Current Assets"
+    }
+  ],
+  "createLedgerCalls": [
+    {
+      "name": "Cash",
+      "parent": "Cash-in-Hand",
+      "openingBalance": 0.0
+    },
+    {
+      "name": "Bank",
+      "parent": "Bank Accounts",
+      "openingBalance": 0.0
+    },
+    {
+      "name": "Sales",
+      "parent": "Sales Accounts",
+      "openingBalance": 0.0
+    },
+    {
+      "name": "Purchase",
+      "parent": "Purchase Accounts",
+      "openingBalance": 0.0
+    },
+    {
+      "name": "Customer A",
+      "parent": "Sundry Debtors",
+      "openingBalance": 0.0
+    },
+    {
+      "name": "Supplier A",
+      "parent": "Sundry Creditors",
+      "openingBalance": 0.0
+    },
+    {
+      "name": "Rent Expense",
+      "parent": "Indirect Expenses",
+      "openingBalance": 0.0
+    }
+  ],
+  "createStockItemCalls": [],
+  "createVoucherCalls": [
+    {
+      "tool": "create-sales-voucher",
+      "voucherNumber": "ST00001",
+      "date": "2026-04-01",
+      "narration": "Deterministic cash sale",
+      "entries": [
+        {
+          "ledgerName": "Cash",
+          "amount": -110.0
+        },
+        {
+          "ledgerName": "Sales",
+          "amount": 110.0
+        }
+      ]
+    },
+    {
+      "tool": "create-purchase-voucher",
+      "voucherNumber": "ST00002",
+      "date": "2026-04-02",
+      "narration": "Deterministic credit purchase",
+      "entries": [
+        {
+          "ledgerName": "Purchase",
+          "amount": -120.0
+        },
+        {
+          "ledgerName": "Supplier A",
+          "amount": 120.0
+        }
+      ]
+    },
+    {
+      "tool": "create-receipt-voucher",
+      "voucherNumber": "ST00003",
+      "date": "2026-04-03",
+      "narration": "Deterministic customer receipt",
+      "entries": [
+        {
+          "ledgerName": "Bank",
+          "amount": -130.0
+        },
+        {
+          "ledgerName": "Customer A",
+          "amount": 130.0
+        }
+      ]
+    },
+    {
+      "tool": "create-journal-voucher",
+      "voucherNumber": "ST00004",
+      "date": "2026-04-04",
+      "narration": "Deterministic receivable setup",
+      "entries": [
+        {
+          "ledgerName": "Customer A",
+          "amount": -140.0
+        },
+        {
+          "ledgerName": "Sales",
+          "amount": 140.0
+        }
+      ]
+    },
+    {
+      "tool": "create-sales-voucher",
+      "voucherNumber": "ST00005",
+      "date": "2026-04-05",
+      "narration": "Deterministic cash sale",
+      "entries": [
+        {
+          "ledgerName": "Cash",
+          "amount": -150.0
+        },
+        {
+          "ledgerName": "Sales",
+          "amount": 150.0
+        }
+      ]
+    },
+    {
+      "tool": "create-purchase-voucher",
+      "voucherNumber": "ST00006",
+      "date": "2026-04-06",
+      "narration": "Deterministic credit purchase",
+      "entries": [
+        {
+          "ledgerName": "Purchase",
+          "amount": -160.0
+        },
+        {
+          "ledgerName": "Supplier A",
+          "amount": 160.0
+        }
+      ]
+    },
+    {
+      "tool": "create-receipt-voucher",
+      "voucherNumber": "ST00007",
+      "date": "2026-04-07",
+      "narration": "Deterministic customer receipt",
+      "entries": [
+        {
+          "ledgerName": "Bank",
+          "amount": -170.0
+        },
+        {
+          "ledgerName": "Customer A",
+          "amount": 170.0
+        }
+      ]
+    },
+    {
+      "tool": "create-journal-voucher",
+      "voucherNumber": "ST00008",
+      "date": "2026-04-08",
+      "narration": "Deterministic receivable setup",
+      "entries": [
+        {
+          "ledgerName": "Customer A",
+          "amount": -180.0
+        },
+        {
+          "ledgerName": "Sales",
+          "amount": 180.0
+        }
+      ]
+    },
+    {
+      "tool": "create-sales-voucher",
+      "voucherNumber": "ST00009",
+      "date": "2026-04-09",
+      "narration": "Deterministic cash sale",
+      "entries": [
+        {
+          "ledgerName": "Cash",
+          "amount": -190.0
+        },
+        {
+          "ledgerName": "Sales",
+          "amount": 190.0
+        }
+      ]
+    },
+    {
+      "tool": "create-purchase-voucher",
+      "voucherNumber": "ST00010",
+      "date": "2026-04-10",
+      "narration": "Deterministic credit purchase",
+      "entries": [
+        {
+          "ledgerName": "Purchase",
+          "amount": -200.0
+        },
+        {
+          "ledgerName": "Supplier A",
+          "amount": 200.0
+        }
+      ]
+    },
+    {
+      "tool": "create-receipt-voucher",
+      "voucherNumber": "ST00011",
+      "date": "2026-04-11",
+      "narration": "Deterministic customer receipt",
+      "entries": [
+        {
+          "ledgerName": "Bank",
+          "amount": -210.0
+        },
+        {
+          "ledgerName": "Customer A",
+          "amount": 210.0
+        }
+      ]
+    },
+    {
+      "tool": "create-journal-voucher",
+      "voucherNumber": "ST00012",
+      "date": "2026-04-12",
+      "narration": "Deterministic receivable setup",
+      "entries": [
+        {
+          "ledgerName": "Customer A",
+          "amount": -220.0
+        },
+        {
+          "ledgerName": "Sales",
+          "amount": 220.0
+        }
+      ]
+    },
+    {
+      "tool": "create-sales-voucher",
+      "voucherNumber": "ST00013",
+      "date": "2026-04-13",
+      "narration": "Deterministic cash sale",
+      "entries": [
+        {
+          "ledgerName": "Cash",
+          "amount": -230.0
+        },
+        {
+          "ledgerName": "Sales",
+          "amount": 230.0
+        }
+      ]
+    },
+    {
+      "tool": "create-purchase-voucher",
+      "voucherNumber": "ST00014",
+      "date": "2026-04-14",
+      "narration": "Deterministic credit purchase",
+      "entries": [
+        {
+          "ledgerName": "Purchase",
+          "amount": -240.0
+        },
+        {
+          "ledgerName": "Supplier A",
+          "amount": 240.0
+        }
+      ]
+    },
+    {
+      "tool": "create-receipt-voucher",
+      "voucherNumber": "ST00015",
+      "date": "2026-04-15",
+      "narration": "Deterministic customer receipt",
+      "entries": [
+        {
+          "ledgerName": "Bank",
+          "amount": -250.0
+        },
+        {
+          "ledgerName": "Customer A",
+          "amount": 250.0
+        }
+      ]
+    },
+    {
+      "tool": "create-journal-voucher",
+      "voucherNumber": "ST00016",
+      "date": "2026-04-16",
+      "narration": "Deterministic receivable setup",
+      "entries": [
+        {
+          "ledgerName": "Customer A",
+          "amount": -260.0
+        },
+        {
+          "ledgerName": "Sales",
+          "amount": 260.0
+        }
+      ]
+    },
+    {
+      "tool": "create-sales-voucher",
+      "voucherNumber": "ST00017",
+      "date": "2026-04-17",
+      "narration": "Deterministic cash sale",
+      "entries": [
+        {
+          "ledgerName": "Cash",
+          "amount": -270.0
+        },
+        {
+          "ledgerName": "Sales",
+          "amount": 270.0
+        }
+      ]
+    },
+    {
+      "tool": "create-purchase-voucher",
+      "voucherNumber": "ST00018",
+      "date": "2026-04-18",
+      "narration": "Deterministic credit purchase",
+      "entries": [
+        {
+          "ledgerName": "Purchase",
+          "amount": -280.0
+        },
+        {
+          "ledgerName": "Supplier A",
+          "amount": 280.0
+        }
+      ]
+    },
+    {
+      "tool": "create-receipt-voucher",
+      "voucherNumber": "ST00019",
+      "date": "2026-04-19",
+      "narration": "Deterministic customer receipt",
+      "entries": [
+        {
+          "ledgerName": "Bank",
+          "amount": -290.0
+        },
+        {
+          "ledgerName": "Customer A",
+          "amount": 290.0
+        }
+      ]
+    },
+    {
+      "tool": "create-journal-voucher",
+      "voucherNumber": "ST00020",
+      "date": "2026-04-20",
+      "narration": "Deterministic receivable setup",
+      "entries": [
+        {
+          "ledgerName": "Customer A",
+          "amount": -300.0
+        },
+        {
+          "ledgerName": "Sales",
+          "amount": 300.0
+        }
+      ]
+    },
+    {
+      "tool": "create-sales-voucher",
+      "voucherNumber": "ST00021",
+      "date": "2026-04-21",
+      "narration": "Deterministic cash sale",
+      "entries": [
+        {
+          "ledgerName": "Cash",
+          "amount": -310.0
+        },
+        {
+          "ledgerName": "Sales",
+          "amount": 310.0
+        }
+      ]
+    },
+    {
+      "tool": "create-purchase-voucher",
+      "voucherNumber": "ST00022",
+      "date": "2026-04-22",
+      "narration": "Deterministic credit purchase",
+      "entries": [
+        {
+          "ledgerName": "Purchase",
+          "amount": -320.0
+        },
+        {
+          "ledgerName": "Supplier A",
+          "amount": 320.0
+        }
+      ]
+    },
+    {
+      "tool": "create-receipt-voucher",
+      "voucherNumber": "ST00023",
+      "date": "2026-04-23",
+      "narration": "Deterministic customer receipt",
+      "entries": [
+        {
+          "ledgerName": "Bank",
+          "amount": -330.0
+        },
+        {
+          "ledgerName": "Customer A",
+          "amount": 330.0
+        }
+      ]
+    },
+    {
+      "tool": "create-journal-voucher",
+      "voucherNumber": "ST00024",
+      "date": "2026-04-24",
+      "narration": "Deterministic receivable setup",
+      "entries": [
+        {
+          "ledgerName": "Customer A",
+          "amount": -340.0
+        },
+        {
+          "ledgerName": "Sales",
+          "amount": 340.0
+        }
+      ]
+    },
+    {
+      "tool": "create-sales-voucher",
+      "voucherNumber": "ST00025",
+      "date": "2026-04-25",
+      "narration": "Deterministic cash sale",
+      "entries": [
+        {
+          "ledgerName": "Cash",
+          "amount": -350.0
+        },
+        {
+          "ledgerName": "Sales",
+          "amount": 350.0
+        }
+      ]
+    },
+    {
+      "tool": "create-purchase-voucher",
+      "voucherNumber": "ST00026",
+      "date": "2026-04-26",
+      "narration": "Deterministic credit purchase",
+      "entries": [
+        {
+          "ledgerName": "Purchase",
+          "amount": -360.0
+        },
+        {
+          "ledgerName": "Supplier A",
+          "amount": 360.0
+        }
+      ]
+    },
+    {
+      "tool": "create-receipt-voucher",
+      "voucherNumber": "ST00027",
+      "date": "2026-04-27",
+      "narration": "Deterministic customer receipt",
+      "entries": [
+        {
+          "ledgerName": "Bank",
+          "amount": -370.0
+        },
+        {
+          "ledgerName": "Customer A",
+          "amount": 370.0
+        }
+      ]
+    },
+    {
+      "tool": "create-journal-voucher",
+      "voucherNumber": "ST00028",
+      "date": "2026-04-28",
+      "narration": "Deterministic receivable setup",
+      "entries": [
+        {
+          "ledgerName": "Customer A",
+          "amount": -380.0
+        },
+        {
+          "ledgerName": "Sales",
+          "amount": 380.0
+        }
+      ]
+    },
+    {
+      "tool": "create-sales-voucher",
+      "voucherNumber": "ST00029",
+      "date": "2026-04-01",
+      "narration": "Deterministic cash sale",
+      "entries": [
+        {
+          "ledgerName": "Cash",
+          "amount": -390.0
+        },
+        {
+          "ledgerName": "Sales",
+          "amount": 390.0
+        }
+      ]
+    },
+    {
+      "tool": "create-purchase-voucher",
+      "voucherNumber": "ST00030",
+      "date": "2026-04-02",
+      "narration": "Deterministic credit purchase",
+      "entries": [
+        {
+          "ledgerName": "Purchase",
+          "amount": -400.0
+        },
+        {
+          "ledgerName": "Supplier A",
+          "amount": 400.0
+        }
+      ]
+    },
+    {
+      "tool": "create-receipt-voucher",
+      "voucherNumber": "ST00031",
+      "date": "2026-04-03",
+      "narration": "Deterministic customer receipt",
+      "entries": [
+        {
+          "ledgerName": "Bank",
+          "amount": -410.0
+        },
+        {
+          "ledgerName": "Customer A",
+          "amount": 410.0
+        }
+      ]
+    },
+    {
+      "tool": "create-journal-voucher",
+      "voucherNumber": "ST00032",
+      "date": "2026-04-04",
+      "narration": "Deterministic receivable setup",
+      "entries": [
+        {
+          "ledgerName": "Customer A",
+          "amount": -420.0
+        },
+        {
+          "ledgerName": "Sales",
+          "amount": 420.0
+        }
+      ]
+    },
+    {
+      "tool": "create-sales-voucher",
+      "voucherNumber": "ST00033",
+      "date": "2026-04-05",
+      "narration": "Deterministic cash sale",
+      "entries": [
+        {
+          "ledgerName": "Cash",
+          "amount": -430.0
+        },
+        {
+          "ledgerName": "Sales",
+          "amount": 430.0
+        }
+      ]
+    },
+    {
+      "tool": "create-purchase-voucher",
+      "voucherNumber": "ST00034",
+      "date": "2026-04-06",
+      "narration": "Deterministic credit purchase",
+      "entries": [
+        {
+          "ledgerName": "Purchase",
+          "amount": -440.0
+        },
+        {
+          "ledgerName": "Supplier A",
+          "amount": 440.0
+        }
+      ]
+    },
+    {
+      "tool": "create-receipt-voucher",
+      "voucherNumber": "ST00035",
+      "date": "2026-04-07",
+      "narration": "Deterministic customer receipt",
+      "entries": [
+        {
+          "ledgerName": "Bank",
+          "amount": -450.0
+        },
+        {
+          "ledgerName": "Customer A",
+          "amount": 450.0
+        }
+      ]
+    },
+    {
+      "tool": "create-journal-voucher",
+      "voucherNumber": "ST00036",
+      "date": "2026-04-08",
+      "narration": "Deterministic receivable setup",
+      "entries": [
+        {
+          "ledgerName": "Customer A",
+          "amount": -460.0
+        },
+        {
+          "ledgerName": "Sales",
+          "amount": 460.0
+        }
+      ]
+    },
+    {
+      "tool": "create-sales-voucher",
+      "voucherNumber": "ST00037",
+      "date": "2026-04-09",
+      "narration": "Deterministic cash sale",
+      "entries": [
+        {
+          "ledgerName": "Cash",
+          "amount": -100.0
+        },
+        {
+          "ledgerName": "Sales",
+          "amount": 100.0
+        }
+      ]
+    },
+    {
+      "tool": "create-purchase-voucher",
+      "voucherNumber": "ST00038",
+      "date": "2026-04-10",
+      "narration": "Deterministic credit purchase",
+      "entries": [
+        {
+          "ledgerName": "Purchase",
+          "amount": -110.0
+        },
+        {
+          "ledgerName": "Supplier A",
+          "amount": 110.0
+        }
+      ]
+    },
+    {
+      "tool": "create-receipt-voucher",
+      "voucherNumber": "ST00039",
+      "date": "2026-04-11",
+      "narration": "Deterministic customer receipt",
+      "entries": [
+        {
+          "ledgerName": "Bank",
+          "amount": -120.0
+        },
+        {
+          "ledgerName": "Customer A",
+          "amount": 120.0
+        }
+      ]
+    },
+    {
+      "tool": "create-journal-voucher",
+      "voucherNumber": "ST00040",
+      "date": "2026-04-12",
+      "narration": "Deterministic receivable setup",
+      "entries": [
+        {
+          "ledgerName": "Customer A",
+          "amount": -130.0
+        },
+        {
+          "ledgerName": "Sales",
+          "amount": 130.0
+        }
+      ]
+    },
+    {
+      "tool": "create-sales-voucher",
+      "voucherNumber": "ST00041",
+      "date": "2026-04-13",
+      "narration": "Deterministic cash sale",
+      "entries": [
+        {
+          "ledgerName": "Cash",
+          "amount": -140.0
+        },
+        {
+          "ledgerName": "Sales",
+          "amount": 140.0
+        }
+      ]
+    },
+    {
+      "tool": "create-purchase-voucher",
+      "voucherNumber": "ST00042",
+      "date": "2026-04-14",
+      "narration": "Deterministic credit purchase",
+      "entries": [
+        {
+          "ledgerName": "Purchase",
+          "amount": -150.0
+        },
+        {
+          "ledgerName": "Supplier A",
+          "amount": 150.0
+        }
+      ]
+    },
+    {
+      "tool": "create-receipt-voucher",
+      "voucherNumber": "ST00043",
+      "date": "2026-04-15",
+      "narration": "Deterministic customer receipt",
+      "entries": [
+        {
+          "ledgerName": "Bank",
+          "amount": -160.0
+        },
+        {
+          "ledgerName": "Customer A",
+          "amount": 160.0
+        }
+      ]
+    },
+    {
+      "tool": "create-journal-voucher",
+      "voucherNumber": "ST00044",
+      "date": "2026-04-16",
+      "narration": "Deterministic receivable setup",
+      "entries": [
+        {
+          "ledgerName": "Customer A",
+          "amount": -170.0
+        },
+        {
+          "ledgerName": "Sales",
+          "amount": 170.0
+        }
+      ]
+    },
+    {
+      "tool": "create-sales-voucher",
+      "voucherNumber": "ST00045",
+      "date": "2026-04-17",
+      "narration": "Deterministic cash sale",
+      "entries": [
+        {
+          "ledgerName": "Cash",
+          "amount": -180.0
+        },
+        {
+          "ledgerName": "Sales",
+          "amount": 180.0
+        }
+      ]
+    },
+    {
+      "tool": "create-purchase-voucher",
+      "voucherNumber": "ST00046",
+      "date": "2026-04-18",
+      "narration": "Deterministic credit purchase",
+      "entries": [
+        {
+          "ledgerName": "Purchase",
+          "amount": -190.0
+        },
+        {
+          "ledgerName": "Supplier A",
+          "amount": 190.0
+        }
+      ]
+    },
+    {
+      "tool": "create-receipt-voucher",
+      "voucherNumber": "ST00047",
+      "date": "2026-04-19",
+      "narration": "Deterministic customer receipt",
+      "entries": [
+        {
+          "ledgerName": "Bank",
+          "amount": -200.0
+        },
+        {
+          "ledgerName": "Customer A",
+          "amount": 200.0
+        }
+      ]
+    },
+    {
+      "tool": "create-journal-voucher",
+      "voucherNumber": "ST00048",
+      "date": "2026-04-20",
+      "narration": "Deterministic receivable setup",
+      "entries": [
+        {
+          "ledgerName": "Customer A",
+          "amount": -210.0
+        },
+        {
+          "ledgerName": "Sales",
+          "amount": 210.0
+        }
+      ]
+    },
+    {
+      "tool": "create-sales-voucher",
+      "voucherNumber": "ST00049",
+      "date": "2026-04-21",
+      "narration": "Deterministic cash sale",
+      "entries": [
+        {
+          "ledgerName": "Cash",
+          "amount": -220.0
+        },
+        {
+          "ledgerName": "Sales",
+          "amount": 220.0
+        }
+      ]
+    },
+    {
+      "tool": "create-purchase-voucher",
+      "voucherNumber": "ST00050",
+      "date": "2026-04-22",
+      "narration": "Deterministic credit purchase",
+      "entries": [
+        {
+          "ledgerName": "Purchase",
+          "amount": -230.0
+        },
+        {
+          "ledgerName": "Supplier A",
+          "amount": 230.0
+        }
+      ]
+    },
+    {
+      "tool": "create-receipt-voucher",
+      "voucherNumber": "ST00051",
+      "date": "2026-04-23",
+      "narration": "Deterministic customer receipt",
+      "entries": [
+        {
+          "ledgerName": "Bank",
+          "amount": -240.0
+        },
+        {
+          "ledgerName": "Customer A",
+          "amount": 240.0
+        }
+      ]
+    },
+    {
+      "tool": "create-journal-voucher",
+      "voucherNumber": "ST00052",
+      "date": "2026-04-24",
+      "narration": "Deterministic receivable setup",
+      "entries": [
+        {
+          "ledgerName": "Customer A",
+          "amount": -250.0
+        },
+        {
+          "ledgerName": "Sales",
+          "amount": 250.0
+        }
+      ]
+    },
+    {
+      "tool": "create-sales-voucher",
+      "voucherNumber": "ST00053",
+      "date": "2026-04-25",
+      "narration": "Deterministic cash sale",
+      "entries": [
+        {
+          "ledgerName": "Cash",
+          "amount": -260.0
+        },
+        {
+          "ledgerName": "Sales",
+          "amount": 260.0
+        }
+      ]
+    },
+    {
+      "tool": "create-purchase-voucher",
+      "voucherNumber": "ST00054",
+      "date": "2026-04-26",
+      "narration": "Deterministic credit purchase",
+      "entries": [
+        {
+          "ledgerName": "Purchase",
+          "amount": -270.0
+        },
+        {
+          "ledgerName": "Supplier A",
+          "amount": 270.0
+        }
+      ]
+    },
+    {
+      "tool": "create-receipt-voucher",
+      "voucherNumber": "ST00055",
+      "date": "2026-04-27",
+      "narration": "Deterministic customer receipt",
+      "entries": [
+        {
+          "ledgerName": "Bank",
+          "amount": -280.0
+        },
+        {
+          "ledgerName": "Customer A",
+          "amount": 280.0
+        }
+      ]
+    },
+    {
+      "tool": "create-journal-voucher",
+      "voucherNumber": "ST00056",
+      "date": "2026-04-28",
+      "narration": "Deterministic receivable setup",
+      "entries": [
+        {
+          "ledgerName": "Customer A",
+          "amount": -290.0
+        },
+        {
+          "ledgerName": "Sales",
+          "amount": 290.0
+        }
+      ]
+    },
+    {
+      "tool": "create-sales-voucher",
+      "voucherNumber": "ST00057",
+      "date": "2026-04-01",
+      "narration": "Deterministic cash sale",
+      "entries": [
+        {
+          "ledgerName": "Cash",
+          "amount": -300.0
+        },
+        {
+          "ledgerName": "Sales",
+          "amount": 300.0
+        }
+      ]
+    },
+    {
+      "tool": "create-purchase-voucher",
+      "voucherNumber": "ST00058",
+      "date": "2026-04-02",
+      "narration": "Deterministic credit purchase",
+      "entries": [
+        {
+          "ledgerName": "Purchase",
+          "amount": -310.0
+        },
+        {
+          "ledgerName": "Supplier A",
+          "amount": 310.0
+        }
+      ]
+    },
+    {
+      "tool": "create-receipt-voucher",
+      "voucherNumber": "ST00059",
+      "date": "2026-04-03",
+      "narration": "Deterministic customer receipt",
+      "entries": [
+        {
+          "ledgerName": "Bank",
+          "amount": -320.0
+        },
+        {
+          "ledgerName": "Customer A",
+          "amount": 320.0
+        }
+      ]
+    },
+    {
+      "tool": "create-journal-voucher",
+      "voucherNumber": "ST00060",
+      "date": "2026-04-04",
+      "narration": "Deterministic receivable setup",
+      "entries": [
+        {
+          "ledgerName": "Customer A",
+          "amount": -330.0
+        },
+        {
+          "ledgerName": "Sales",
+          "amount": 330.0
+        }
+      ]
+    },
+    {
+      "tool": "create-sales-voucher",
+      "voucherNumber": "ST00061",
+      "date": "2026-04-05",
+      "narration": "Deterministic cash sale",
+      "entries": [
+        {
+          "ledgerName": "Cash",
+          "amount": -340.0
+        },
+        {
+          "ledgerName": "Sales",
+          "amount": 340.0
+        }
+      ]
+    },
+    {
+      "tool": "create-purchase-voucher",
+      "voucherNumber": "ST00062",
+      "date": "2026-04-06",
+      "narration": "Deterministic credit purchase",
+      "entries": [
+        {
+          "ledgerName": "Purchase",
+          "amount": -350.0
+        },
+        {
+          "ledgerName": "Supplier A",
+          "amount": 350.0
+        }
+      ]
+    },
+    {
+      "tool": "create-receipt-voucher",
+      "voucherNumber": "ST00063",
+      "date": "2026-04-07",
+      "narration": "Deterministic customer receipt",
+      "entries": [
+        {
+          "ledgerName": "Bank",
+          "amount": -360.0
+        },
+        {
+          "ledgerName": "Customer A",
+          "amount": 360.0
+        }
+      ]
+    },
+    {
+      "tool": "create-journal-voucher",
+      "voucherNumber": "ST00064",
+      "date": "2026-04-08",
+      "narration": "Deterministic receivable setup",
+      "entries": [
+        {
+          "ledgerName": "Customer A",
+          "amount": -370.0
+        },
+        {
+          "ledgerName": "Sales",
+          "amount": 370.0
+        }
+      ]
+    },
+    {
+      "tool": "create-sales-voucher",
+      "voucherNumber": "ST00065",
+      "date": "2026-04-09",
+      "narration": "Deterministic cash sale",
+      "entries": [
+        {
+          "ledgerName": "Cash",
+          "amount": -380.0
+        },
+        {
+          "ledgerName": "Sales",
+          "amount": 380.0
+        }
+      ]
+    },
+    {
+      "tool": "create-purchase-voucher",
+      "voucherNumber": "ST00066",
+      "date": "2026-04-10",
+      "narration": "Deterministic credit purchase",
+      "entries": [
+        {
+          "ledgerName": "Purchase",
+          "amount": -390.0
+        },
+        {
+          "ledgerName": "Supplier A",
+          "amount": 390.0
+        }
+      ]
+    },
+    {
+      "tool": "create-receipt-voucher",
+      "voucherNumber": "ST00067",
+      "date": "2026-04-11",
+      "narration": "Deterministic customer receipt",
+      "entries": [
+        {
+          "ledgerName": "Bank",
+          "amount": -400.0
+        },
+        {
+          "ledgerName": "Customer A",
+          "amount": 400.0
+        }
+      ]
+    },
+    {
+      "tool": "create-journal-voucher",
+      "voucherNumber": "ST00068",
+      "date": "2026-04-12",
+      "narration": "Deterministic receivable setup",
+      "entries": [
+        {
+          "ledgerName": "Customer A",
+          "amount": -410.0
+        },
+        {
+          "ledgerName": "Sales",
+          "amount": 410.0
+        }
+      ]
+    },
+    {
+      "tool": "create-sales-voucher",
+      "voucherNumber": "ST00069",
+      "date": "2026-04-13",
+      "narration": "Deterministic cash sale",
+      "entries": [
+        {
+          "ledgerName": "Cash",
+          "amount": -420.0
+        },
+        {
+          "ledgerName": "Sales",
+          "amount": 420.0
+        }
+      ]
+    },
+    {
+      "tool": "create-purchase-voucher",
+      "voucherNumber": "ST00070",
+      "date": "2026-04-14",
+      "narration": "Deterministic credit purchase",
+      "entries": [
+        {
+          "ledgerName": "Purchase",
+          "amount": -430.0
+        },
+        {
+          "ledgerName": "Supplier A",
+          "amount": 430.0
+        }
+      ]
+    },
+    {
+      "tool": "create-receipt-voucher",
+      "voucherNumber": "ST00071",
+      "date": "2026-04-15",
+      "narration": "Deterministic customer receipt",
+      "entries": [
+        {
+          "ledgerName": "Bank",
+          "amount": -440.0
+        },
+        {
+          "ledgerName": "Customer A",
+          "amount": 440.0
+        }
+      ]
+    },
+    {
+      "tool": "create-journal-voucher",
+      "voucherNumber": "ST00072",
+      "date": "2026-04-16",
+      "narration": "Deterministic receivable setup",
+      "entries": [
+        {
+          "ledgerName": "Customer A",
+          "amount": -450.0
+        },
+        {
+          "ledgerName": "Sales",
+          "amount": 450.0
+        }
+      ]
+    },
+    {
+      "tool": "create-sales-voucher",
+      "voucherNumber": "ST00073",
+      "date": "2026-04-17",
+      "narration": "Deterministic cash sale",
+      "entries": [
+        {
+          "ledgerName": "Cash",
+          "amount": -460.0
+        },
+        {
+          "ledgerName": "Sales",
+          "amount": 460.0
+        }
+      ]
+    },
+    {
+      "tool": "create-purchase-voucher",
+      "voucherNumber": "ST00074",
+      "date": "2026-04-18",
+      "narration": "Deterministic credit purchase",
+      "entries": [
+        {
+          "ledgerName": "Purchase",
+          "amount": -100.0
+        },
+        {
+          "ledgerName": "Supplier A",
+          "amount": 100.0
+        }
+      ]
+    },
+    {
+      "tool": "create-receipt-voucher",
+      "voucherNumber": "ST00075",
+      "date": "2026-04-19",
+      "narration": "Deterministic customer receipt",
+      "entries": [
+        {
+          "ledgerName": "Bank",
+          "amount": -110.0
+        },
+        {
+          "ledgerName": "Customer A",
+          "amount": 110.0
+        }
+      ]
+    },
+    {
+      "tool": "create-journal-voucher",
+      "voucherNumber": "ST00076",
+      "date": "2026-04-20",
+      "narration": "Deterministic receivable setup",
+      "entries": [
+        {
+          "ledgerName": "Customer A",
+          "amount": -120.0
+        },
+        {
+          "ledgerName": "Sales",
+          "amount": 120.0
+        }
+      ]
+    },
+    {
+      "tool": "create-sales-voucher",
+      "voucherNumber": "ST00077",
+      "date": "2026-04-21",
+      "narration": "Deterministic cash sale",
+      "entries": [
+        {
+          "ledgerName": "Cash",
+          "amount": -130.0
+        },
+        {
+          "ledgerName": "Sales",
+          "amount": 130.0
+        }
+      ]
+    },
+    {
+      "tool": "create-purchase-voucher",
+      "voucherNumber": "ST00078",
+      "date": "2026-04-22",
+      "narration": "Deterministic credit purchase",
+      "entries": [
+        {
+          "ledgerName": "Purchase",
+          "amount": -140.0
+        },
+        {
+          "ledgerName": "Supplier A",
+          "amount": 140.0
+        }
+      ]
+    },
+    {
+      "tool": "create-receipt-voucher",
+      "voucherNumber": "ST00079",
+      "date": "2026-04-23",
+      "narration": "Deterministic customer receipt",
+      "entries": [
+        {
+          "ledgerName": "Bank",
+          "amount": -150.0
+        },
+        {
+          "ledgerName": "Customer A",
+          "amount": 150.0
+        }
+      ]
+    },
+    {
+      "tool": "create-journal-voucher",
+      "voucherNumber": "ST00080",
+      "date": "2026-04-24",
+      "narration": "Deterministic receivable setup",
+      "entries": [
+        {
+          "ledgerName": "Customer A",
+          "amount": -160.0
+        },
+        {
+          "ledgerName": "Sales",
+          "amount": 160.0
+        }
+      ]
+    },
+    {
+      "tool": "create-sales-voucher",
+      "voucherNumber": "ST00081",
+      "date": "2026-04-25",
+      "narration": "Deterministic cash sale",
+      "entries": [
+        {
+          "ledgerName": "Cash",
+          "amount": -170.0
+        },
+        {
+          "ledgerName": "Sales",
+          "amount": 170.0
+        }
+      ]
+    },
+    {
+      "tool": "create-purchase-voucher",
+      "voucherNumber": "ST00082",
+      "date": "2026-04-26",
+      "narration": "Deterministic credit purchase",
+      "entries": [
+        {
+          "ledgerName": "Purchase",
+          "amount": -180.0
+        },
+        {
+          "ledgerName": "Supplier A",
+          "amount": 180.0
+        }
+      ]
+    },
+    {
+      "tool": "create-receipt-voucher",
+      "voucherNumber": "ST00083",
+      "date": "2026-04-27",
+      "narration": "Deterministic customer receipt",
+      "entries": [
+        {
+          "ledgerName": "Bank",
+          "amount": -190.0
+        },
+        {
+          "ledgerName": "Customer A",
+          "amount": 190.0
+        }
+      ]
+    },
+    {
+      "tool": "create-journal-voucher",
+      "voucherNumber": "ST00084",
+      "date": "2026-04-28",
+      "narration": "Deterministic receivable setup",
+      "entries": [
+        {
+          "ledgerName": "Customer A",
+          "amount": -200.0
+        },
+        {
+          "ledgerName": "Sales",
+          "amount": 200.0
+        }
+      ]
+    },
+    {
+      "tool": "create-sales-voucher",
+      "voucherNumber": "ST00085",
+      "date": "2026-04-01",
+      "narration": "Deterministic cash sale",
+      "entries": [
+        {
+          "ledgerName": "Cash",
+          "amount": -210.0
+        },
+        {
+          "ledgerName": "Sales",
+          "amount": 210.0
+        }
+      ]
+    },
+    {
+      "tool": "create-purchase-voucher",
+      "voucherNumber": "ST00086",
+      "date": "2026-04-02",
+      "narration": "Deterministic credit purchase",
+      "entries": [
+        {
+          "ledgerName": "Purchase",
+          "amount": -220.0
+        },
+        {
+          "ledgerName": "Supplier A",
+          "amount": 220.0
+        }
+      ]
+    },
+    {
+      "tool": "create-receipt-voucher",
+      "voucherNumber": "ST00087",
+      "date": "2026-04-03",
+      "narration": "Deterministic customer receipt",
+      "entries": [
+        {
+          "ledgerName": "Bank",
+          "amount": -230.0
+        },
+        {
+          "ledgerName": "Customer A",
+          "amount": 230.0
+        }
+      ]
+    },
+    {
+      "tool": "create-journal-voucher",
+      "voucherNumber": "ST00088",
+      "date": "2026-04-04",
+      "narration": "Deterministic receivable setup",
+      "entries": [
+        {
+          "ledgerName": "Customer A",
+          "amount": -240.0
+        },
+        {
+          "ledgerName": "Sales",
+          "amount": 240.0
+        }
+      ]
+    },
+    {
+      "tool": "create-sales-voucher",
+      "voucherNumber": "ST00089",
+      "date": "2026-04-05",
+      "narration": "Deterministic cash sale",
+      "entries": [
+        {
+          "ledgerName": "Cash",
+          "amount": -250.0
+        },
+        {
+          "ledgerName": "Sales",
+          "amount": 250.0
+        }
+      ]
+    },
+    {
+      "tool": "create-purchase-voucher",
+      "voucherNumber": "ST00090",
+      "date": "2026-04-06",
+      "narration": "Deterministic credit purchase",
+      "entries": [
+        {
+          "ledgerName": "Purchase",
+          "amount": -260.0
+        },
+        {
+          "ledgerName": "Supplier A",
+          "amount": 260.0
+        }
+      ]
+    },
+    {
+      "tool": "create-receipt-voucher",
+      "voucherNumber": "ST00091",
+      "date": "2026-04-07",
+      "narration": "Deterministic customer receipt",
+      "entries": [
+        {
+          "ledgerName": "Bank",
+          "amount": -270.0
+        },
+        {
+          "ledgerName": "Customer A",
+          "amount": 270.0
+        }
+      ]
+    },
+    {
+      "tool": "create-journal-voucher",
+      "voucherNumber": "ST00092",
+      "date": "2026-04-08",
+      "narration": "Deterministic receivable setup",
+      "entries": [
+        {
+          "ledgerName": "Customer A",
+          "amount": -280.0
+        },
+        {
+          "ledgerName": "Sales",
+          "amount": 280.0
+        }
+      ]
+    },
+    {
+      "tool": "create-sales-voucher",
+      "voucherNumber": "ST00093",
+      "date": "2026-04-09",
+      "narration": "Deterministic cash sale",
+      "entries": [
+        {
+          "ledgerName": "Cash",
+          "amount": -290.0
+        },
+        {
+          "ledgerName": "Sales",
+          "amount": 290.0
+        }
+      ]
+    },
+    {
+      "tool": "create-purchase-voucher",
+      "voucherNumber": "ST00094",
+      "date": "2026-04-10",
+      "narration": "Deterministic credit purchase",
+      "entries": [
+        {
+          "ledgerName": "Purchase",
+          "amount": -300.0
+        },
+        {
+          "ledgerName": "Supplier A",
+          "amount": 300.0
+        }
+      ]
+    },
+    {
+      "tool": "create-receipt-voucher",
+      "voucherNumber": "ST00095",
+      "date": "2026-04-11",
+      "narration": "Deterministic customer receipt",
+      "entries": [
+        {
+          "ledgerName": "Bank",
+          "amount": -310.0
+        },
+        {
+          "ledgerName": "Customer A",
+          "amount": 310.0
+        }
+      ]
+    },
+    {
+      "tool": "create-journal-voucher",
+      "voucherNumber": "ST00096",
+      "date": "2026-04-12",
+      "narration": "Deterministic receivable setup",
+      "entries": [
+        {
+          "ledgerName": "Customer A",
+          "amount": -320.0
+        },
+        {
+          "ledgerName": "Sales",
+          "amount": 320.0
+        }
+      ]
+    },
+    {
+      "tool": "create-sales-voucher",
+      "voucherNumber": "ST00097",
+      "date": "2026-04-13",
+      "narration": "Deterministic cash sale",
+      "entries": [
+        {
+          "ledgerName": "Cash",
+          "amount": -330.0
+        },
+        {
+          "ledgerName": "Sales",
+          "amount": 330.0
+        }
+      ]
+    },
+    {
+      "tool": "create-purchase-voucher",
+      "voucherNumber": "ST00098",
+      "date": "2026-04-14",
+      "narration": "Deterministic credit purchase",
+      "entries": [
+        {
+          "ledgerName": "Purchase",
+          "amount": -340.0
+        },
+        {
+          "ledgerName": "Supplier A",
+          "amount": 340.0
+        }
+      ]
+    },
+    {
+      "tool": "create-receipt-voucher",
+      "voucherNumber": "ST00099",
+      "date": "2026-04-15",
+      "narration": "Deterministic customer receipt",
+      "entries": [
+        {
+          "ledgerName": "Bank",
+          "amount": -350.0
+        },
+        {
+          "ledgerName": "Customer A",
+          "amount": 350.0
+        }
+      ]
+    },
+    {
+      "tool": "create-journal-voucher",
+      "voucherNumber": "ST00100",
+      "date": "2026-04-16",
+      "narration": "Deterministic receivable setup",
+      "entries": [
+        {
+          "ledgerName": "Customer A",
+          "amount": -360.0
+        },
+        {
+          "ledgerName": "Sales",
+          "amount": 360.0
+        }
+      ]
+    }
+  ]
+}

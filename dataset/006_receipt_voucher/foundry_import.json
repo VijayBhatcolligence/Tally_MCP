@@ -1,0 +1,67 @@
+{
+  "company": {
+    "name": "Foundry Tally Test Co",
+    "fiscalYearFrom": "2026-04-01",
+    "booksBeginningFrom": "2026-04-01",
+    "currency": "INR"
+  },
+  "chartOfAccounts": [
+    {
+      "name": "Bank",
+      "group": "Bank Accounts",
+      "classification": "asset",
+      "openingBalance": 0.0
+    },
+    {
+      "name": "Sales",
+      "group": "Sales Accounts",
+      "classification": "income",
+      "openingBalance": 0.0
+    },
+    {
+      "name": "Customer A",
+      "group": "Sundry Debtors",
+      "classification": "asset",
+      "openingBalance": 0.0
+    }
+  ],
+  "stockItems": [],
+  "journalEntries": [
+    {
+      "externalId": "V001",
+      "entryType": "Sales",
+      "postingDate": "2026-04-01",
+      "memo": "Opening credit sale",
+      "lines": [
+        {
+          "ledger": "Customer A",
+          "dc": "debit",
+          "amount": 2000.0
+        },
+        {
+          "ledger": "Sales",
+          "dc": "credit",
+          "amount": 2000.0
+        }
+      ]
+    },
+    {
+      "externalId": "V002",
+      "entryType": "Receipt",
+      "postingDate": "2026-04-02",
+      "memo": "Customer receipt",
+      "lines": [
+        {
+          "ledger": "Bank",
+          "dc": "debit",
+          "amount": 1500.0
+        },
+        {
+          "ledger": "Customer A",
+          "dc": "credit",
+          "amount": 1500.0
+        }
+      ]
+    }
+  ]
+}

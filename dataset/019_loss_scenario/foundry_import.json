@@ -1,0 +1,115 @@
+{
+  "company": {
+    "name": "Foundry Tally Test Co",
+    "fiscalYearFrom": "2026-04-01",
+    "booksBeginningFrom": "2026-04-01",
+    "currency": "INR"
+  },
+  "chartOfAccounts": [
+    {
+      "name": "Cash",
+      "group": "Cash-in-Hand",
+      "classification": "asset",
+      "openingBalance": 0.0
+    },
+    {
+      "name": "Sales",
+      "group": "Sales Accounts",
+      "classification": "income",
+      "openingBalance": 0.0
+    },
+    {
+      "name": "Purchase",
+      "group": "Purchase Accounts",
+      "classification": "expense",
+      "openingBalance": 0.0
+    },
+    {
+      "name": "Rent Expense",
+      "group": "Indirect Expenses",
+      "classification": "expense",
+      "openingBalance": 0.0
+    },
+    {
+      "name": "Salary Expense",
+      "group": "Indirect Expenses",
+      "classification": "expense",
+      "openingBalance": 0.0
+    }
+  ],
+  "stockItems": [],
+  "journalEntries": [
+    {
+      "externalId": "V001",
+      "entryType": "Sales",
+      "postingDate": "2026-04-01",
+      "memo": "Cash sale",
+      "lines": [
+        {
+          "ledger": "Cash",
+          "dc": "debit",
+          "amount": 1000.0
+        },
+        {
+          "ledger": "Sales",
+          "dc": "credit",
+          "amount": 1000.0
+        }
+      ]
+    },
+    {
+      "externalId": "V002",
+      "entryType": "Purchase",
+      "postingDate": "2026-04-02",
+      "memo": "Cash purchase",
+      "lines": [
+        {
+          "ledger": "Purchase",
+          "dc": "debit",
+          "amount": 1800.0
+        },
+        {
+          "ledger": "Cash",
+          "dc": "credit",
+          "amount": 1800.0
+        }
+      ]
+    },
+    {
+      "externalId": "V003",
+      "entryType": "Payment",
+      "postingDate": "2026-04-03",
+      "memo": "Rent paid",
+      "lines": [
+        {
+          "ledger": "Rent Expense",
+          "dc": "debit",
+          "amount": 800.0
+        },
+        {
+          "ledger": "Cash",
+          "dc": "credit",
+          "amount": 800.0
+        }
+      ]
+    },
+    {
+      "externalId": "V004",
+      "entryType": "Payment",
+      "postingDate": "2026-04-04",
+      "memo": "Salary paid",
+      "lines": [
+        {
+          "ledger": "Salary Expense",
+          "dc": "debit",
+          "amount": 600.0
+        },
+        {
+          "ledger": "Cash",
+          "dc": "credit",
+          "amount": 600.0
+        }
+      ]
+    }
+  ]
+}
