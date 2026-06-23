@@ -1,0 +1,18 @@
+{
+  "company": {
+    "name": "Foundry Tally Test Co",
+    "fiscalYearFrom": "2026-04-01",
+    "booksBeginningFrom": "2026-04-01",
+    "currency": "INR"
+  },
+  "features": {
+    "gstEnabled": true,
+    "inventoryEnabled": true
+  },
+  "defaults": {
+    "voucherDate": "2026-04-01",
+    "gstRate": 0.18,
+    "stressScale": 100
+  },
+  "stressScales": [100, 500, 1000, 5000]
+}

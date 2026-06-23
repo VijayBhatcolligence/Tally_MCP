@@ -1,0 +1,3 @@
+display_name: Accounting Dataset Factory
+short_description: Create or extend deterministic Foundry-Tally accounting datasets.
+default_prompt: Create or extend deterministic accounting datasets with masters, vouchers, reports, manifest metadata, and expected outputs for Foundry-Tally equivalence testing.
